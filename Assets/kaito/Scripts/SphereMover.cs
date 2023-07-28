@@ -2,34 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// オブジェクトを円周上で移動させるスクリプト
-
+//----オブジェクトを円周上で移動させるスクリプト----
 public class SphereMover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1.0f; // 移動速度
-    [SerializeField] float circle_radius = 1.0f;
-    Vector2 initPosition; // 初期位置固定
+    Rigidbody2D rb;
+
+    [SerializeField] float speed; // 速度
+    [SerializeField] float radius; // 半径
+
+    float moveX;
+    float moveY;
 
     // Start is called before the first frame update
     void Start()
     {
-        initPosition = transform.position;
+        rb = GetComponent<Rigidbody2D>();   
     }
 
     // Update is called once per frame
     void Update()
     {
-        Circle();
+        Rotation();
     }
 
-    void Circle()
+    void Rotation() // 回転処理についての関数
     {
-        Vector2 pos = transform.position;
+        moveX = radius * Mathf.Cos(Time.time * speed);
+        moveY = radius * Mathf.Sin(Time.time * speed);
 
-        float rad = moveSpeed * Mathf.Rad2Deg * Time.time;
-
-        pos.x = Mathf.Cos(rad) * circle_radius;
-
-        transform.position = pos;
+        rb.MovePosition(new Vector2(moveX, moveY));
     }
 }

@@ -299,6 +299,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &205994229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 374169450491627790, guid: 13b91cc192a2c074cb79ee90aecac29c, type: 3}
+  m_PrefabInstance: {fileID: 374169450016352857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &205994232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205994229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e71e2aa187b2b2429e0933c25b5fdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  circle_radius: 1
 --- !u!1001 &374169450016352857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,10 +372,6 @@ PrefabInstance:
     - target: {fileID: 374169450491627790, guid: 13b91cc192a2c074cb79ee90aecac29c, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: radius
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13b91cc192a2c074cb79ee90aecac29c, type: 3}

@@ -15,9 +15,6 @@ public class ForwardEnemy : MonoBehaviour
     void Update()
     {
         pos = transform.position; // 現在の座標位置取得
-
-        // _numがマイナスになると逆方向に移動する
-        transform.Translate(transform.right * Time.deltaTime * _speed * _num);
         
         if (pos.x > _xBounds)
         {
@@ -27,5 +24,8 @@ public class ForwardEnemy : MonoBehaviour
         {
             _num = 1; // 右に移動させるように
         }
+
+        // _numがマイナスになると逆方向に移動する
+        transform.Translate(transform.right * Time.deltaTime * _speed * _num);
     }
 }

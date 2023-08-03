@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1087503679637772739}
   - component: {fileID: 5955077250615192925}
   - component: {fileID: 8646693768781764182}
-  - component: {fileID: 2020750696279366850}
+  - component: {fileID: 8699442343051430505}
   m_Layer: 0
   m_Name: HorizontalEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.984375, y: 0.984375}
   m_EdgeRadius: 0
---- !u!114 &2020750696279366850
+--- !u!114 &8699442343051430505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +143,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613957656516003627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c2ca73099085c644ba75e85606ee093, type: 3}
+  m_Script: {fileID: 11500000, guid: 8acc2d20e6f975f4e9583279585239fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  _speed: 5
+  _num: 1
+  _leftBounds: 1
+  _rightBounds: 5
 --- !u!1 &6105894959098936917
 GameObject:
   m_ObjectHideFlags: 0

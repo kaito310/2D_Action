@@ -7,8 +7,8 @@ public class SphereMover : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    [SerializeField] float speed; // ‘¬“x
-    [SerializeField] float radius; // ”¼Œa
+    [SerializeField] float _speed; // ‘¬“x
+    [SerializeField] float _radius; // ”¼Œa
 
     float moveX;
     float moveY;
@@ -27,8 +27,8 @@ public class SphereMover : MonoBehaviour
 
     void Rotation() // ‰ñ“]ˆ—‚É‚Â‚¢‚Ä‚ÌŠÖ”
     {
-        moveX = radius * Mathf.Cos(Time.time * speed);
-        moveY = radius * Mathf.Sin(Time.time * speed);
+        moveX = _radius * Mathf.Cos(Time.time * _speed);
+        moveY = _radius * Mathf.Sin(Time.time * _speed);
 
         rb.MovePosition(new Vector2(moveX, moveY));
     }

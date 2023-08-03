@@ -8,6 +8,7 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float jump = 1;
     private Rigidbody2D _rd2D;
     private int jumpCount = 0;
+    private int Player;
     
     // Start is called before the first frame update
     void Start()

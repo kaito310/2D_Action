@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AnimatorController : MonoBehaviour
+{
+    private Animator anim = null;
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.localScale = new Vector3(-3, 3, 3);
+            anim.SetBool("Run", true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.localScale = new Vector3(3, 3, 3);
+            anim.SetBool("Run", true);
+        }
+        else
+        {
+            anim.SetBool("Run", false);
+        }
+    }
+}

@@ -2,19 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//----足場を左右に動かすスクリプト----
+//----オブジェクトを左右に移動させるスクリプト----
 public class MoveX_axis : MonoBehaviour
 {
-    [SerializeField] float _length; // 往復範囲
-    float moveX; // x軸方向の値
+    [SerializeField] float _speed; // 移動速度
+    [SerializeField] int _num = 1; // 左右移動切り替え用の変数
+    [SerializeField] float _xBounds; // x軸方向の移動の範囲
+
+    Vector2 startPos; // 初期位置
+    Vector2 pos; // 現在位置
+
+    void Start()
+    {
+        startPos = transform.position;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        // 往復した値を時間から計算
-        moveX = Mathf.PingPong(Time.time, _length);
+        pos = transform.position;
 
-        // x座標を往復させて左右に動かす
-        transform.localPosition = new Vector2(moveX, transform.position.y);
+        // 現在位置が初期位置＋移動範囲より大きくなったら
+        if (pos.x > startPos.x + _xBounds)
+        {
+            _num = -1; // 左に移動させるように
+        }
+        if (pos.x < (startPos.x - _xBounds))
+        {
+            _num = 1; // 右に移動させるように
+        }
+
+        // _numがマイナスになると逆方向に移動する
+        transform.Translate(transform.right * Time.deltaTime * _speed * _num);
     }
 }

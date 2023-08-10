@@ -39,7 +39,7 @@ public class PlayerController: MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && !isjump)
         {
-            _rd2D.AddForce(transform.up * jump);
+            _rd2D.velocity = Vector2.up * jump;
             isjump = true;
         }
 
@@ -50,6 +50,10 @@ public class PlayerController: MonoBehaviour
         if (other.gameObject.CompareTag("floor"))
         {
             isjump = false;
+        }
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("ìGÇ∆ê⁄êGÇµÇΩÅI");
         }
     }
 }

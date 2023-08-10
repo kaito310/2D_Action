@@ -39,5 +39,9 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetBool("Jump", false);
         }
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            anim.Play("Hit");
+        }
     }
 }

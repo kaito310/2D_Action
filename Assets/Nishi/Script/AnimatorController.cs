@@ -28,5 +28,16 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetBool("Run", false);
         }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("Jump", true);
+        }
+     }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("floor"))
+        {
+            anim.SetBool("Jump", false);
+        }
     }
 }

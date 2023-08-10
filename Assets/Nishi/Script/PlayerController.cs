@@ -7,7 +7,7 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
     private Rigidbody2D _rd2D;
-    private int jumpCount = 0;
+    private bool isjump = false;
     private int Player;
     
     // Start is called before the first frame update
@@ -37,10 +37,10 @@ public class PlayerController: MonoBehaviour
                 position.x -= speed * Time.deltaTime;
             }
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && !isjump)
         {
             _rd2D.AddForce(transform.up * jump);
-            jumpCount++;
+            isjump = true;
         }
 
         transform.position = position;
@@ -49,7 +49,7 @@ public class PlayerController: MonoBehaviour
     {
         if (other.gameObject.CompareTag("floor"))
         {
-            jumpCount = 0;
+            isjump = false;
         }
     }
 }

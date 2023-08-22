@@ -95,5 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9edd94644c9092a43a0194e7d949edcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
-  bullets: []
+  _velocity: 2
+  parentEnemy: {fileID: 5094383993927642359, guid: ea7d9caf252e11246bb9f9d6a1def527, type: 3}
+  bulletPrefab: {fileID: 4630761334995893886}
+  timeBounds: 3
+  deleteTime: 1

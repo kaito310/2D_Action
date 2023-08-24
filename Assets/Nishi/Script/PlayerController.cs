@@ -42,8 +42,12 @@ public class PlayerController: MonoBehaviour
             _rd2D.velocity = Vector2.up * jump;
             isjump = true;
         }
+        if (Input.GetKeyDown(KeyCode.W)) //‹Ê‚ð”­ŽË‚·‚é
+        {
 
-        transform.position = position;
+        }
+
+            transform.position = position;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {

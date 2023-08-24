@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79932537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -3, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -380,14 +380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 981961870870612438, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
-      propertyPath: Bullet
-      value: 
-      objectReference: {fileID: 797720574}
-    - target: {fileID: 981961870870612438, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
-      propertyPath: firingPoint
-      value: 
-      objectReference: {fileID: 215905796}
     - target: {fileID: 6958622485860709371, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_Name
       value: Player
@@ -406,15 +398,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalPosition.x
@@ -422,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_LocalPosition.z
@@ -479,6 +471,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4588769481150731041, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
   m_PrefabInstance: {fileID: 1154622681}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &797720578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797720574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0393ca01a3cdfbe4d9b0addfb0b8f957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
 --- !u!1001 &1154622681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,15 +497,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalPosition.x
@@ -651,7 +656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947092322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -3.7, z: 0}
+  m_LocalPosition: {x: 3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: 2
-  parentEnemy: {fileID: 5094383993927642359, guid: ea7d9caf252e11246bb9f9d6a1def527, type: 3}
-  bulletPrefab: {fileID: 4630761334995893886}
-  timeBounds: 3
-  deleteTime: 1
+  _parentEnemy: {fileID: 2260917574871312031, guid: 1562fb3ceaafbda44b134e1e4a824346, type: 3}
+  _bulletPrefab: {fileID: 4630761334995893886}
+  _spawnBounds: 3
+  _deleteTime: 3

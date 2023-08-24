@@ -23,16 +23,29 @@ public class MoveX_axis : MonoBehaviour
         pos = transform.position;
 
         // 現在位置が初期位置＋移動範囲より大きくなったら
-        if (pos.x > startPos.x + _xBounds)
+        if (pos.x > startPos.x + _xBounds && _num == 1)
         {
             _num = -1; // 左に移動させるように
         }
-        if (pos.x < (startPos.x - _xBounds))
+        if (pos.x < (startPos.x - _xBounds) && _num == -1)
         {
             _num = 1; // 右に移動させるように
         }
 
         // _numがマイナスになると逆方向に移動する
         transform.Translate(transform.right * Time.deltaTime * _speed * _num);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // 壁に衝突時に向き変更用
+        if (collision.gameObject.CompareTag("Wall") && _num == -1)
+        {
+            _num = 1;
+        }
+        if (collision.gameObject.CompareTag("Wall") && _num == 1)
+        {
+            _num = -1;
+        }
     }
 }

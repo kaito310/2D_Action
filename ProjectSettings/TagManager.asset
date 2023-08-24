@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - GameoverLine
   - Scaffold
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 125838139
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

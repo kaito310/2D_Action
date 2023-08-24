@@ -342,6 +342,14 @@ PrefabInstance:
       propertyPath: parentEnemy
       value: 
       objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: -3486459867726819441, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: _parentEnemy
+      value: 
+      objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: 880275670317037880, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3464079406229476445, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -437,6 +445,14 @@ PrefabInstance:
       propertyPath: parentEnemy
       value: 
       objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: -3486459867726819441, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: _parentEnemy
+      value: 
+      objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: 880275670317037880, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3464079406229476445, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -540,6 +556,14 @@ PrefabInstance:
       propertyPath: parentEnemy
       value: 
       objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: -3486459867726819441, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: _parentEnemy
+      value: 
+      objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: 880275670317037880, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3464079406229476445, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -643,6 +667,14 @@ PrefabInstance:
       propertyPath: parentEnemy
       value: 
       objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: -3486459867726819441, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: _parentEnemy
+      value: 
+      objectReference: {fileID: 2260917574871312031}
+    - target: {fileID: 880275670317037880, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3464079406229476445, guid: 10dc2fbeeb1bfdb4281e163c6893feb9, type: 3}
       propertyPath: m_RootOrder
       value: 3

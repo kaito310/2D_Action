@@ -8,7 +8,11 @@ TagManager:
   - Enemy
   - GameoverLine
   - Scaffold
+<<<<<<< HEAD
   - Stage
+=======
+  - Wall
+>>>>>>> bd8dcf0f281f0345ec5af496b0764da37f020ca5
   layers:
   - Default
   - TransparentFX

@@ -396,6 +396,10 @@ PrefabInstance:
       propertyPath: jump
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6958622485860709372, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -500,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_LocalPosition.y

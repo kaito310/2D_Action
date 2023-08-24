@@ -5,6 +5,8 @@ using UnityEngine;
 public class AnimatorController : MonoBehaviour
 {
     private Animator anim = null;
+    private int HitCheck;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,14 +36,19 @@ public class AnimatorController : MonoBehaviour
         }
      }
     private void OnCollisionEnter2D(Collision2D other)
-    {
+    { 
         if (other.gameObject.CompareTag("floor"))
         {
             anim.SetBool("Jump", false);
         }
         if (other.gameObject.CompareTag("Enemy"))
         {
+            HitCheck++;
             anim.Play("Hit");
+            if (HitCheck > 3)
+            {
+                anim.SetFloat("Death");
+            }
         }
     }
 }

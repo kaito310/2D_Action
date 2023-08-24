@@ -9,10 +9,14 @@ TagManager:
   - GameoverLine
   - Scaffold
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Stage
 =======
   - Wall
 >>>>>>> bd8dcf0f281f0345ec5af496b0764da37f020ca5
+=======
+  - Wall
+>>>>>>> 9686cf37a9c46ed5feb78b0f14f75b2976657928
   layers:
   - Default
   - TransparentFX

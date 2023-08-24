@@ -18,12 +18,12 @@ public class AnimatorController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.localScale = new Vector3(-3, 3, 3);
+            transform.localScale = new Vector3(-1, 1, 1);
             anim.SetBool("Run", true);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.localScale = new Vector3(3, 3, 3);
+            transform.localScale = new Vector3(1, 1, 1);
             anim.SetBool("Run", true);
         }
         else
@@ -33,6 +33,14 @@ public class AnimatorController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             anim.SetBool("Jump", true);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetBool("Attack", true);
+        }
+        else
+        {
+            anim.SetBool("Attack", false);
         }
      }
     private void OnCollisionEnter2D(Collision2D other)
@@ -45,9 +53,9 @@ public class AnimatorController : MonoBehaviour
         {
             HitCheck++;
             anim.Play("Hit");
-            if (HitCheck > 3)
+            if (HitCheck > 2)
             {
-                anim.SetFloat("Death");
+                anim.Play("Death");
             }
         }
     }

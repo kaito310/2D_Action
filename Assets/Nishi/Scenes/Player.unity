@@ -392,6 +392,14 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6958622485860709372, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 215905796}
+    - target: {fileID: 6958622485860709372, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 797720574}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -471,7 +479,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4588769481150731041, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
   m_PrefabInstance: {fileID: 1154622681}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &797720578
+--- !u!114 &797720575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,6 +492,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+--- !u!58 &797720576
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797720574}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0025823712}
+  serializedVersion: 2
+  m_Radius: 0.33300894
 --- !u!1001 &1154622681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,6 +515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7515235620097868213, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_RootOrder
       value: 2

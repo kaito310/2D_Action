@@ -6,7 +6,6 @@ public class PlayerController: MonoBehaviour
 {
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
-    [SerializeField] GameObject Player;
     [SerializeField] GameObject bullet;
     private Rigidbody2D _rd2D;
     private bool isjump = false;
@@ -45,7 +44,10 @@ public class PlayerController: MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.W)) //ã Çî≠éÀÇ∑ÇÈ
         {
-            LauncherShot();
+            GameObject _Bullet = Instantiate(bullet) as GameObject;
+            _Bullet.transform.position = this.transform.position;
+            Destroy(_Bullet, 0.8f);
+
         }
 
             transform.position = position;
@@ -61,11 +63,4 @@ public class PlayerController: MonoBehaviour
             Debug.Log("ìGÇ∆ê⁄êGÇµÇΩÅI");
         }
     }
-    private void LauncherShot()
-    {
-        Vector2 bulletPosition = Player.transform.position;
-        GameObject newBall = Instantiate(bullet, bulletPosition, transform.rotation);
-        newBall.name = bullet.name;
-        Destroy(newBall, 0.8f);
-    }
-}
+ }

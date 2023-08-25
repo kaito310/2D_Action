@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - floor
-  - Enemy
-  - GameoverLine
-  - Scaffold
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - Stage
-=======
-  - Wall
->>>>>>> bd8dcf0f281f0345ec5af496b0764da37f020ca5
-=======
-  - Wall
->>>>>>> 9686cf37a9c46ed5feb78b0f14f75b2976657928
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -51,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
-    uniqueID: 125838139
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

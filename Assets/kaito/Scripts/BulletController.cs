@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour
 {
     [SerializeField] float _velocity; // ‘¬“x
 
-    public Vector2 _startPos; // ‰ŠúˆÊ’u
+    [HideInInspector] public Vector2 _startPos; // ‰ŠúˆÊ’u
 
     // Start is called before the first frame update
     void Start()

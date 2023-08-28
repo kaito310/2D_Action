@@ -17,7 +17,7 @@ public class BulletSpawn : MonoBehaviour
     void Start()
     {
         bulletControllerScript = GameObject.Find("bullet").GetComponent<BulletController>();
-        Destroy(_bulletPrefab, _deleteTime); // deleteTime–ˆ‚É’e‚ğíœ
+        //\\ƒGƒ‰[‰ÓŠ //Destroy(_bulletPrefab, _deleteTime); // deleteTime–ˆ‚É’e‚ğíœ
     }
 
     // Update is called once per frame

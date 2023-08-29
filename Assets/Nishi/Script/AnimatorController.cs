@@ -5,12 +5,13 @@ using UnityEngine;
 public class AnimatorController : MonoBehaviour
 {
     private Animator anim = null;
-    private int HitCheck;
+    private PlayerController playerControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -42,21 +43,11 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetBool("Attack", false);
         }
-     }
-    private void OnCollisionEnter2D(Collision2D other)
-    { 
-        if (other.gameObject.CompareTag("floor"))
+        anim.SetBool("Jump", false);
+        anim.Play("Hit");
+        if (playerControllerScript.isDead == true)
         {
-            anim.SetBool("Jump", false);
-        }
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            HitCheck++;
-            anim.Play("Hit");
-            if (HitCheck > 2)
-            {
-                anim.Play("Death");
-            }
+            anim.Play("Death");
         }
     }
 }

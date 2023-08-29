@@ -9,7 +9,9 @@ public class PlayerController: MonoBehaviour
     [SerializeField] GameObject bullet;
     private Rigidbody2D _rd2D;
     private bool isjump = false;
-    
+    [HideInInspector] public bool isDead = false;
+    [HideInInspector] public int HitCheck;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,10 +49,9 @@ public class PlayerController: MonoBehaviour
             GameObject _Bullet = Instantiate(bullet) as GameObject;
             _Bullet.transform.position = this.transform.position;
             Destroy(_Bullet, 0.8f);
-
         }
 
-            transform.position = position;
+        transform.position = position;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -61,6 +62,14 @@ public class PlayerController: MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("“G‚ÆÚG‚µ‚½I");
+            HitCheck++;
+        }
+         if (isDead == false)
+        {
+            if (HitCheck > 2)
+            {
+                isDead = true;
+            }
         }
     }
- }
+}

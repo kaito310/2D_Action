@@ -7,17 +7,15 @@ public class BulletController : MonoBehaviour
 {
     [SerializeField] float _velocity; // ë¨ìx
 
-    [HideInInspector] public Vector2 _startPos; // èâä˙à íu
+    [HideInInspector] public Vector2 _startPos;
 
-    // Start is called before the first frame update
     void Start()
     {
         _startPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector2(_velocity, 0f) * Time.deltaTime);
+        transform.Translate(new Vector2(_velocity, 0) * Time.deltaTime);
     }
 }

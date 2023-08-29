@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 8546790080738014698, guid: 9ac584d2e8e277948aec7ca985d864cb, type: 3}
-  _spawnBounds: 3
+  _spawnTime: 3
   _deleteTime: 1.5
 --- !u!1 &3377393512621352648
 GameObject:

@@ -17,7 +17,7 @@ public class AnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerControllerScript.isDead == false)
+        if (playerControllerScript.isStop == false)
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -53,6 +53,7 @@ public class AnimatorController : MonoBehaviour
         if (playerControllerScript.isHit == true && playerControllerScript.isDead == false)
         {
             anim.SetBool("Hit", true);
+            playerControllerScript.isStop = true;
         }
         else
         {
@@ -61,6 +62,7 @@ public class AnimatorController : MonoBehaviour
         if (playerControllerScript.isDead == true)
         {
             playerControllerScript.isHit = false;
+            playerControllerScript.isStop = true;
             anim.Play("Death");
         }
     }

@@ -10,9 +10,10 @@ public class PlayerController: MonoBehaviour
     private Rigidbody2D _rd2D;
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
-    [HideInInspector] public int HitCheck;
     [HideInInspector] public bool isHit = false;
+    [HideInInspector] public int HitCheck;
     [HideInInspector] public float hItTime;
+    [HideInInspector] public bool isStop;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class PlayerController: MonoBehaviour
     {
         Vector2 position = transform.position;
 
-        if (isDead == false)
+        if (isStop == false)
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -60,7 +61,7 @@ public class PlayerController: MonoBehaviour
             {
                 hItTime += Time.deltaTime;
             }
-            if (hItTime >= 0.5f)
+            if (hItTime >= 1.0f)
             {
                 isHit = false;
                 hItTime = 0;
@@ -78,6 +79,7 @@ public class PlayerController: MonoBehaviour
         {
             Debug.Log("“G‚ÆÚG‚µ‚½I");
             isHit = true;
+            isStop =  true;
             HitCheck++;
         }
          if (isDead == false)
@@ -85,6 +87,7 @@ public class PlayerController: MonoBehaviour
             if (HitCheck > 2)
             {
                 isDead = true;
+                isStop = true;
             }
         }
     }

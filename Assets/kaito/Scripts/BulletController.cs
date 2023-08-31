@@ -18,4 +18,13 @@ public class BulletController : MonoBehaviour
     {
         transform.Translate(new Vector2(_velocity, 0) * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // プレイヤーかステージに当たったら消す
+        if (gameObject.CompareTag("Player") || gameObject.CompareTag("Stage"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

@@ -9,7 +9,11 @@ TagManager:
   - Wall
   - Stage
   - floor
+<<<<<<< HEAD
   - Bullet
+=======
+  - E_Bullet
+>>>>>>> enemy
   layers:
   - Default
   - TransparentFX

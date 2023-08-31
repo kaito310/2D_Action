@@ -21,12 +21,12 @@ public class AnimatorController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.A))
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-2, 2, 2);
                 anim.SetBool("Run", true);
             }
             else if (Input.GetKey(KeyCode.D))
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(2, 2, 2);
                 anim.SetBool("Run", true);
             }
             else

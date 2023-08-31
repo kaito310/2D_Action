@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Scaffold
   - Wall
+  - Stage
+  - floor
   layers:
   - Default
   - TransparentFX

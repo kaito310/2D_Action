@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Stage
   - floor
+  - E_Bullet
   layers:
   - Default
   - TransparentFX

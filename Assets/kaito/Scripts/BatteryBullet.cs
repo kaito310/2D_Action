@@ -6,30 +6,23 @@ using UnityEngine;
 public class BatteryBullet : MonoBehaviour
 {
     [SerializeField] float _speed; // 速さ
-    int _frameCount; // フレームカウント
-    const int _deleteFrame = 180; // 削除フレーム
+    [HideInInspector] public Vector2 _startPos; // 初期位置
 
     void Start()
     {
-        
+        _startPos = transform.position;
     }
 
     void Update()
     {
         // 位置の更新
-        transform.Translate(_speed * Time.deltaTime, 0, 0);
-
-        // 一定フレームで消す
-        if (++_frameCount > _deleteFrame)
-        {
-            Destroy(gameObject);
-        }
+        transform.Translate(0, _speed * Time.deltaTime, 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // プレイヤーかステージに当たったら消す
-        if (gameObject.CompareTag("Player") || gameObject.CompareTag("Stage"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }

@@ -5,29 +5,29 @@ using UnityEngine;
 //---弾を発射する砲台のスクリプト---
 public class Battery : MonoBehaviour
 {
-    [SerializeField] GameObject _bulletPrefab;
-    Vector3 _bulletPoint; // 生成位置
+    [SerializeField] GameObject _bulletPrefabs;
+    BatteryBullet _bulletControllerScript; // 弾のスクリプト
 
-    float _elapsedTime; // 経過時間
+    [SerializeField] float _startTime; // 生成開始時間
     [SerializeField] float _spawnTime; // スポーン時間
+    [SerializeField] float _deleteBulletTime; // 弾の削除時間
 
     void Start()
     {
-        // 親オブジェクトからの相対位置
-        _bulletPoint = transform.Find("BulletPoint").localPosition;
+        _bulletControllerScript = GameObject.Find("BulletInTheBattery")
+            .GetComponent<BatteryBullet>(); // スクリプト取得
+
+        // ""メソッドを(_startTime)秒後に実行後、(_spawnTime)秒間隔で実行
+        InvokeRepeating("InstantiateGameObject", _startTime, _spawnTime);
     }
 
-    void Update()
+    // ゲームオブジェクトをインスタンス化するメソッド
+    public void InstantiateGameObject()
     {
-        _elapsedTime += Time.deltaTime;
+        var instance = Instantiate<GameObject>(_bulletPrefabs, _bulletControllerScript._startPos,
+            _bulletPrefabs.transform.rotation);
 
-        if (_spawnTime > _elapsedTime)
-        {
-            // プレイヤー位置に生成
-            Instantiate(_bulletPrefab, transform.position + _bulletPoint, Quaternion.identity);
-
-            _elapsedTime = 0;
-        }
+        // インスタンスしたオブジェクトを(_deleteBulletTime)秒後に消す
+        Destroy(instance, _deleteBulletTime);
     }
-
 }

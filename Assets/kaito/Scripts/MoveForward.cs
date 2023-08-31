@@ -7,7 +7,6 @@ public class MoveForward : MonoBehaviour
 {
     // spriteをレンダリングし、シーン上でどのように表示するかを制御するコンポーネント
     SpriteRenderer _sr = null;
-
     Rigidbody2D _rb = null;
 
     // 接触判定のスクリプト（両サイドにHitBoxを付けているため、配列を使用）

@@ -17,19 +17,22 @@ public class AnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (playerControllerScript.isDead == false)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
-            anim.SetBool("Run", true);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-            anim.SetBool("Run", true);
-        }
-        else
-        {
-            anim.SetBool("Run", false);
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+                anim.SetBool("Run", true);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                anim.SetBool("Run", true);
+            }
+            else
+            {
+                anim.SetBool("Run", false);
+            }
         }
         if (Input.GetKey(KeyCode.Space))
         {
@@ -43,10 +46,21 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetBool("Attack", false);
         }
-        anim.SetBool("Jump", false);
-        anim.Play("Hit");
+        if (playerControllerScript.isjump == false)
+        {
+            anim.SetBool("Jump", false);
+        }
+        if (playerControllerScript.isHit == true && playerControllerScript.isDead == false)
+        {
+            anim.SetBool("Hit", true);
+        }
+        else
+        {
+            anim.SetBool("Hit", false);
+        }
         if (playerControllerScript.isDead == true)
         {
+            playerControllerScript.isHit = false;
             anim.Play("Death");
         }
     }

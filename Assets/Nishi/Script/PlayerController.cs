@@ -8,9 +8,11 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float jump = 1;
     [SerializeField] GameObject bullet;
     private Rigidbody2D _rd2D;
-    private bool isjump = false;
+    [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
     [HideInInspector] public int HitCheck;
+    [HideInInspector] public bool isHit = false;
+    [HideInInspector] public float hItTime;
 
     // Start is called before the first frame update
     void Start()
@@ -23,35 +25,48 @@ public class PlayerController: MonoBehaviour
     {
         Vector2 position = transform.position;
 
-        if (Input.GetKey(KeyCode.A))
+        if (isDead == false)
         {
-           position.x -= speed * Time.deltaTime;
-           if (Input.GetKey(KeyCode.D))
-            {
-                position.x += speed * Time.deltaTime;
-            }
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            position.x += speed * Time.deltaTime;
             if (Input.GetKey(KeyCode.A))
             {
                 position.x -= speed * Time.deltaTime;
+                if (Input.GetKey(KeyCode.D))
+                {
+                    position.x += speed * Time.deltaTime;
+                }
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                position.x += speed * Time.deltaTime;
+                if (Input.GetKey(KeyCode.A))
+                {
+                    position.x -= speed * Time.deltaTime;
+                }
+            }
+            if (Input.GetKey(KeyCode.Space) && !isjump)
+            {
+                _rd2D.velocity = Vector2.up * jump;
+                isjump = true;
+            }
+            if (Input.GetKeyDown(KeyCode.W)) //ã Çî≠éÀÇ∑ÇÈ
+            {
+                GameObject _Bullet = Instantiate(bullet) as GameObject;
+                _Bullet.transform.position = this.transform.position;
+                Destroy(_Bullet, 0.8f);
+            }
+
+            transform.position = position;
+            if (isHit == true)
+            {
+                hItTime += Time.deltaTime;
+            }
+            if (hItTime >= 0.5f)
+            {
+                isHit = false;
+                hItTime = 0;
+                Debug.Log("HitTime = 0");
             }
         }
-        if (Input.GetKey(KeyCode.Space) && !isjump)
-        {
-            _rd2D.velocity = Vector2.up * jump;
-            isjump = true;
-        }
-        if (Input.GetKeyDown(KeyCode.W)) //ã Çî≠éÀÇ∑ÇÈ
-        {
-            GameObject _Bullet = Instantiate(bullet) as GameObject;
-            _Bullet.transform.position = this.transform.position;
-            Destroy(_Bullet, 0.8f);
-        }
-
-        transform.position = position;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -62,6 +77,7 @@ public class PlayerController: MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("ìGÇ∆ê⁄êGÇµÇΩÅI");
+            isHit = true;
             HitCheck++;
         }
          if (isDead == false)

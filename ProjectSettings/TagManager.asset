@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - E_Bullet
+  - Enemy
+  - Stage
+  - floor
+  - Bullet
+  - Gun
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,8 @@ public class AnimatorController : MonoBehaviour
 {
     private Animator anim = null;
     private PlayerController playerControllerScript;
+    private float oldPositionY = 0f;
+    private JumpState jumpState = JumpState.Idle;
 
     // Start is called before the first frame update
     void Start()
@@ -17,16 +19,14 @@ public class AnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerControllerScript.isStop == false)
+        if (playerControllerScript.isDead == false)
         {
             if (Input.GetKey(KeyCode.A))
             {
-                transform.localScale = new Vector3(-2, 2, 2);
                 anim.SetBool("Run", true);
             }
             else if (Input.GetKey(KeyCode.D))
             {
-                transform.localScale = new Vector3(2, 2, 2);
                 anim.SetBool("Run", true);
             }
             else
@@ -34,26 +34,38 @@ public class AnimatorController : MonoBehaviour
                 anim.SetBool("Run", false);
             }
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (jumpState == JumpState.Jumping)
         {
             anim.SetBool("Jump", true);
         }
-        if (Input.GetKey(KeyCode.W))
+        if (jumpState == JumpState.Falling)
         {
-            anim.SetBool("Attack", true);
+            anim.SetBool("Fall", true);
         }
-        else
+        if (jumpState == JumpState.Idle)
         {
-            anim.SetBool("Attack", false);
+            anim.SetBool("Fall", false);
+            anim.SetBool("Jump", false);
+        }
+        if (playerControllerScript.isGun == false)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                anim.SetBool("Attack", true);
+            }
+            else
+            {
+                anim.SetBool("Attack", false);
+            }
         }
         if (playerControllerScript.isjump == false)
         {
             anim.SetBool("Jump", false);
+            anim.SetBool("Fall", false);
         }
         if (playerControllerScript.isHit == true && playerControllerScript.isDead == false)
         {
             anim.SetBool("Hit", true);
-            playerControllerScript.isStop = true;
         }
         else
         {
@@ -62,8 +74,37 @@ public class AnimatorController : MonoBehaviour
         if (playerControllerScript.isDead == true)
         {
             playerControllerScript.isHit = false;
-            playerControllerScript.isStop = true;
             anim.Play("Death");
         }
+    }
+
+    private enum JumpState
+    {
+        Idle,
+        Jumping,
+        Falling
+    }
+
+    private void FixedUpdate()
+    {
+        CheckJumpState();
+    }
+
+    private void CheckJumpState()
+    {
+        if (oldPositionY < this.transform.position.y)
+        {
+            jumpState = JumpState.Jumping;
+
+        }
+        else if (oldPositionY > this.transform.position.y)  
+        {
+            jumpState = JumpState.Falling;
+        }
+        else 
+        {
+            jumpState = JumpState.Idle;
+        }
+        oldPositionY = this.transform.position.y;
     }
 }

@@ -1,19 +1,26 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController: MonoBehaviour
 {
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
+    [SerializeField] float gunTime = 0f;
     [SerializeField] GameObject bullet;
-    private Rigidbody2D _rd2D;
+    [SerializeField] GameObject gun;
+    [SerializeField] SpriteRenderer sr;
+    [SerializeField] Image heart;
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
     [HideInInspector] public bool isHit = false;
+    [HideInInspector] public bool isStop = false;
+    [HideInInspector] public bool isGun = false;
     [HideInInspector] public int HitCheck;
     [HideInInspector] public float hItTime;
-    [HideInInspector] public bool isStop;
+    private Rigidbody2D _rd2D;
+    private float currentGunTime = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +33,11 @@ public class PlayerController: MonoBehaviour
     {
         Vector2 position = transform.position;
 
-        if (isStop == false)
+        if (isDead == false)
         {
             if (Input.GetKey(KeyCode.A))
             {
+                sr.flipX = true;
                 position.x -= speed * Time.deltaTime;
                 if (Input.GetKey(KeyCode.D))
                 {
@@ -38,6 +46,7 @@ public class PlayerController: MonoBehaviour
             }
             if (Input.GetKey(KeyCode.D))
             {
+                sr.flipX = false;
                 position.x += speed * Time.deltaTime;
                 if (Input.GetKey(KeyCode.A))
                 {
@@ -49,26 +58,32 @@ public class PlayerController: MonoBehaviour
                 _rd2D.velocity = Vector2.up * jump;
                 isjump = true;
             }
-            if (Input.GetKeyDown(KeyCode.W)) //‹Ê‚ð”­ŽË‚·‚é
-            {
-                GameObject _Bullet = Instantiate(bullet) as GameObject;
-                _Bullet.transform.position = this.transform.position;
-                Destroy(_Bullet, 0.8f);
-            }
 
             transform.position = position;
             if (isHit == true)
             {
                 hItTime += Time.deltaTime;
             }
-            if (hItTime >= 1.0f)
+            if (hItTime >= 0.5f)
             {
                 isHit = false;
                 hItTime = 0;
                 Debug.Log("HitTime = 0");
             }
+            if (isGun)
+            {
+                if (Input.GetKeyDown(KeyCode.W)) //‹Ê‚ð”­ŽË‚·‚é
+                {
+                    GameObject _Bullet = Instantiate(bullet) as GameObject;
+                    _Bullet.transform.position = this.transform.position;
+                    Destroy(_Bullet, 0.8f);
+                }
+            }
+
+            Fill();
         }
     }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("floor"))
@@ -79,16 +94,28 @@ public class PlayerController: MonoBehaviour
         {
             Debug.Log("“G‚ÆÚG‚µ‚½I");
             isHit = true;
-            isStop =  true;
             HitCheck++;
         }
-         if (isDead == false)
+        if (isDead == false)
         {
             if (HitCheck > 2)
             {
                 isDead = true;
-                isStop = true;
             }
         }
+        if (other.gameObject.CompareTag("Gun"))
+        {
+            currentGunTime = gunTime;
+            isGun = true;
+            isStop = true;
+            Destroy(gun);
+        }
+    }
+
+    private void Fill()
+    {
+        currentGunTime -= Time.deltaTime;
+        if (currentGunTime < 0) isGun = false;
+        heart.fillAmount = currentGunTime / gunTime;
     }
 }

@@ -1,33 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FireBullet : MonoBehaviour
 {
-     private bool _SR;
+    [SerializeField] Rigidbody2D _ri;
+    SpriteRenderer player;
+    private bool _SR;
 
     // Start is called before the first frame update
-    private void Start()
+    private void OnEnable()
     {
-        GameObject player = GameObject.Find("Player");
-        _SR = player.GetComponent<SpriteRenderer>().flipX;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        player = GameObject.Find("Player").GetComponent<SpriteRenderer>();
+        _SR = player.flipX;
     }
 
     private void FixedUpdate()
     {
         if (_SR)
         {
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(-20, 0);
+            _ri.velocity = new Vector2(-20, 0);
         }
         else
         {
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(20, 0);
+            _ri.velocity = new Vector2(20, 0);
         }
     }
 }

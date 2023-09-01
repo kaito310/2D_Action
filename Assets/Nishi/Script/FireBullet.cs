@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBullet : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _ri;
+    [SerializeField] GameObject _EN;
     SpriteRenderer player;
     private bool _SR;
 
@@ -24,6 +25,14 @@ public class FireBullet : MonoBehaviour
         else
         {
             _ri.velocity = new Vector2(20, 0);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            Destroy(_EN);
         }
     }
 }

@@ -15,7 +15,6 @@ public class PlayerController: MonoBehaviour
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
     [HideInInspector] public bool isHit = false;
-    [HideInInspector] public bool isStop = false;
     [HideInInspector] public bool isGun = false;
     [HideInInspector] public int HitCheck;
     [HideInInspector] public float hItTime;
@@ -107,7 +106,6 @@ public class PlayerController: MonoBehaviour
         {
             currentGunTime = gunTime;
             isGun = true;
-            isStop = true;
             Destroy(gun);
         }
     }
@@ -115,7 +113,10 @@ public class PlayerController: MonoBehaviour
     private void Fill()
     {
         currentGunTime -= Time.deltaTime;
-        if (currentGunTime < 0) isGun = false;
+        if (currentGunTime < 0) 
+        {
+            isGun = false;
+        }
         heart.fillAmount = currentGunTime / gunTime;
     }
 }

@@ -457,7 +457,7 @@ PrefabInstance:
     - target: {fileID: 8066207003023549187, guid: 4dc74926a8955cb42812f85b3c759d09, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 31dcbf90b1b5fb34caeaa7647f3ff702, type: 3}
+      objectReference: {fileID: -2413806693520163455, guid: c6f886609b9214e4abac9c02031621a6, type: 3}
     - target: {fileID: 8066207003023549197, guid: 4dc74926a8955cb42812f85b3c759d09, type: 3}
       propertyPath: m_Name
       value: gun
@@ -817,6 +817,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1322922869526243235, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
+      propertyPath: _EN
+      value: 
+      objectReference: {fileID: 1947092322}
     - target: {fileID: 1883640012064801223, guid: 294733ac24d51ab47929a7f9bbf14653, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1101,7 +1105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947092322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -4, z: 0}
+  m_LocalPosition: {x: 3, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

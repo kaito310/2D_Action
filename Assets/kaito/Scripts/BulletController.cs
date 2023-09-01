@@ -6,12 +6,11 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     [SerializeField] float _velocity; // ‘¬“x
-
-    [HideInInspector] public Vector2 _startPos;
+    [SerializeField] float _deleteTime; // ”j‰ó‚Ü‚Å‚ÌŠÔ
 
     void Start()
     {
-        _startPos = transform.position;
+        Destroy(gameObject, _deleteTime); // _deleteTime(•b)‚Åíœ
     }
 
     void Update()

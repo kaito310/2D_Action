@@ -63,7 +63,7 @@ public class AnimatorController : MonoBehaviour
             anim.SetBool("Jump", false);
             anim.SetBool("Fall", false);
         }
-        if (playerControllerScript.isHit == true && playerControllerScript.isDead == false)
+        if (playerControllerScript.isHit && playerControllerScript.isDead == false)
         {
             anim.SetBool("Hit", true);
         }
@@ -71,7 +71,7 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetBool("Hit", false);
         }
-        if (playerControllerScript.isDead == true)
+        if (playerControllerScript.isDead)
         {
             playerControllerScript.isHit = false;
             anim.Play("Death");
@@ -97,7 +97,7 @@ public class AnimatorController : MonoBehaviour
             jumpState = JumpState.Jumping;
 
         }
-        else if (oldPositionY > this.transform.position.y)  
+        else if (oldPositionY > this.transform.position.y)
         {
             jumpState = JumpState.Falling;
         }
@@ -105,6 +105,7 @@ public class AnimatorController : MonoBehaviour
         {
             jumpState = JumpState.Idle;
         }
+
         oldPositionY = this.transform.position.y;
     }
 }

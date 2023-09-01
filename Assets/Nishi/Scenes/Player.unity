@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8066207003023549187, guid: 4dc74926a8955cb42812f85b3c759d09, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 31dcbf90b1b5fb34caeaa7647f3ff702, type: 3}
     - target: {fileID: 8066207003023549197, guid: 4dc74926a8955cb42812f85b3c759d09, type: 3}
       propertyPath: m_Name
       value: gun
@@ -668,21 +672,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+  m_Color: {r: 0.18867922, g: 0.17515127, b: 0.17515127, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 487b88f0a029da94ead3820ccff0eeb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dca3ea9dfbbc6144a0b2f56d3c6db4f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 3
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1005454168
@@ -726,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709372, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: gunTime
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6958622485860709374, guid: b8c1c834171b0ee4dad7c728a6d2f721, type: 3}
       propertyPath: m_RootOrder
@@ -969,18 +973,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.07401203, g: 0.9339623, b: 0.20967996, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 487b88f0a029da94ead3820ccff0eeb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dca3ea9dfbbc6144a0b2f56d3c6db4f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 0
+  m_FillMethod: 1
   m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0

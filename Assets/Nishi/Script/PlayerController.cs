@@ -7,7 +7,7 @@ public class PlayerController: MonoBehaviour
 {
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
-    [SerializeField] float gunTime = 0f;
+    [SerializeField] float gunTime = 1.0f;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject gun;
     [SerializeField] SpriteRenderer sr;
@@ -60,7 +60,7 @@ public class PlayerController: MonoBehaviour
             }
 
             transform.position = position;
-            if (isHit == true)
+            if (isHit)
             {
                 hItTime += Time.deltaTime;
             }

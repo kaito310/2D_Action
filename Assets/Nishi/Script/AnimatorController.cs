@@ -52,7 +52,6 @@ public class AnimatorController : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 anim.SetBool("Attack", true);
-                Debug.Log("çUåÇÇµÇΩ");
             }
             else
             {

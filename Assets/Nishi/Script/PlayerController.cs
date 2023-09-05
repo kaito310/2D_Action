@@ -9,9 +9,9 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float jump = 1;
     [SerializeField] float gunTime = 1.0f;
     [SerializeField] GameObject bullet;
-    [SerializeField] GameObject gun;
+    [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
-    [SerializeField] Image heart;
+    [SerializeField] Image GUN;
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
     [HideInInspector] public bool isHit = false;
@@ -106,7 +106,7 @@ public class PlayerController: MonoBehaviour
         {
             currentGunTime = gunTime;
             isGun = true;
-            Destroy(gun);
+            Destroy(Item);
         }
     }
 
@@ -117,6 +117,6 @@ public class PlayerController: MonoBehaviour
         {
             isGun = false;
         }
-        heart.fillAmount = currentGunTime / gunTime;
+        GUN.fillAmount = currentGunTime / gunTime;
     }
 }

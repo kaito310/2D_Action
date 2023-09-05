@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//---弾の生成を行うスクリプト---
-//---修正中---
+//---弾を四方向に発射する敵のスクリプト---
 public class BulletSpawn : MonoBehaviour
 {
     [SerializeField] GameObject _bulletPrefab; // 弾プレハブ
     SpriteRenderer _sr = null;
-
     [SerializeField] float _spawnTime; // スポーン時間
     float _elapsedTime; // 経過時間
 

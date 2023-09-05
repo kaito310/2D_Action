@@ -22,7 +22,7 @@ public class BatteryBullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // プレイヤーかステージに当たったら消す
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Stage"))
         {
             Destroy(gameObject);
         }

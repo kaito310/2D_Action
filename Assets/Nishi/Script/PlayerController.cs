@@ -8,23 +8,33 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
     [SerializeField] float gunTime = 1.0f;
+    [SerializeField] float heatTime = 1.0f;
+    [SerializeField] float flashInterval;
+    [SerializeField] int loopCount;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
+    [SerializeField] Image Heat;
+
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
     [HideInInspector] public bool isHit = false;
     [HideInInspector] public bool isGun = false;
     [HideInInspector] public int HitCheck;
     [HideInInspector] public float hItTime;
+
     private Rigidbody2D _rd2D;
+    private BoxCollider2D _bo2D;
     private float currentGunTime = 0f;
+    private STATE state;
 
     // Start is called before the first frame update
     void Start()
     {
         _rd2D = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        _bo2D = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -78,6 +88,10 @@ public class PlayerController: MonoBehaviour
                     Destroy(_Bullet, 0.8f);
                 }
             }
+            if (state == STATE.DAMAGED)
+            {
+                return;
+            }
 
             Fill();
         }
@@ -94,6 +108,8 @@ public class PlayerController: MonoBehaviour
             Debug.Log("敵と接触した！");
             isHit = true;
             HitCheck++;
+            state = STATE.DAMAGED;
+            StartCoroutine(_hit()); //コルーチンを開始
         }
         if (isDead == false)
         {
@@ -108,6 +124,17 @@ public class PlayerController: MonoBehaviour
             isGun = true;
             Destroy(Item);
         }
+        if (isHit)
+        {
+            return;
+        }
+    }
+
+    enum STATE
+    {
+        NOMAL,
+        DAMAGED,
+        MUTEKI
     }
 
     private void Fill()
@@ -118,5 +145,23 @@ public class PlayerController: MonoBehaviour
             isGun = false;
         }
         GUN.fillAmount = currentGunTime / gunTime;
+    }
+
+    IEnumerator _hit() //点滅させる処理
+    {
+        for (int i = 0; i < loopCount; i++) //点滅ループ開始
+        {
+            yield return new WaitForSeconds(flashInterval); //flashInterval待ってから
+            sr.enabled = false; //spriteRendererをオフ
+
+            yield return new WaitForSeconds(flashInterval); //flashInterval待ってから
+            sr.enabled = true; //spriteRendererをオン
+            if (i > 20)
+            {
+                state = STATE.MUTEKI;
+            }
+        }
+        state = STATE.NOMAL;
+        isHit = false;
     }
 }

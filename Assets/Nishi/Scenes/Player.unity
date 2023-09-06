@@ -1760,6 +1760,14 @@ PrefabInstance:
       propertyPath: Item
       value: 
       objectReference: {fileID: 1758572338}
+    - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+      propertyPath: loopCount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+      propertyPath: flashInterval
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
 --- !u!1001 &8777266338957819258

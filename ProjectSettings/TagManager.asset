@@ -10,6 +10,9 @@ TagManager:
   - floor
   - Bullet
   - Gun
+  - Wall
+  - Slash
+  - Floor
   layers:
   - Default
   - TransparentFX

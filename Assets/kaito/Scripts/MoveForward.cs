@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //---敵をまっすぐ移動させるスクリプト---
+// \\・点滅処理でスプライトレンダラーがオフになり画面外判定になってしまう
+// ・斜めの床に沿って動けるようにもしたい
 public class MoveForward : MonoBehaviour
 {
     // spriteをレンダリングし、シーン上でどのように表示するかを制御するコンポーネント
@@ -19,7 +21,6 @@ public class MoveForward : MonoBehaviour
     {
         _sr = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();
-        //_checkCollision = GameObject.Find("HitBox").GetComponent<EnemyCollisionCheck>();
     }
 
     // 一定秒数ごとに呼ばれる
@@ -51,6 +52,7 @@ public class MoveForward : MonoBehaviour
         else // 画面外なら
         {
             _rb.Sleep(); // 物理演算を一時的に働かせなくする
+            Debug.Log("画面外");
         }
     }
 }

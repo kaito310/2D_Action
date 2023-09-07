@@ -35,17 +35,4 @@ public class MoveX_axis : MonoBehaviour
         // _numがマイナスになると逆方向に移動する
         transform.Translate(transform.right * Time.deltaTime * _speed * _num);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        // 壁に衝突時に向き変更用
-        if (collision.gameObject.CompareTag("Wall") && _num == -1)
-        {
-            _num = 1;
-        }
-        if (collision.gameObject.CompareTag("Wall") && _num == 1)
-        {
-            _num = -1;
-        }
-    }
 }

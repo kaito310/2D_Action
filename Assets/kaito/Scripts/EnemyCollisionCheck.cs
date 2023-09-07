@@ -7,13 +7,13 @@ public class EnemyCollisionCheck : MonoBehaviour
 {
     [HideInInspector] public bool _isOn = false; // 何かに接触したかどうか
 
-    string _wallTag = "Wall";
+    string _stageTag = "Stage";
     string _enemyTag = "Enemy";
 
     private void OnTriggerEnter2D(Collider2D collision) // 接触したとき
     {
-        // WallタグかEnemyタグを持つオブジェクトなら
-        if (collision.tag == _wallTag || collision.tag == _enemyTag)
+        // StageタグかEnemyタグを持つオブジェクトなら
+        if (collision.tag == _stageTag || collision.tag == _enemyTag)
         {
             _isOn = true;
         }
@@ -21,7 +21,7 @@ public class EnemyCollisionCheck : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision) // 接触が終わったら
     {
-        if (collision.tag == _wallTag || collision.tag == _enemyTag)
+        if (collision.tag == _stageTag || collision.tag == _enemyTag)
         {
             _isOn = false;
         }

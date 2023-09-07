@@ -7,10 +7,12 @@ public class BatteryBullet : MonoBehaviour
 {
     [SerializeField] float _speed; // 速さ
     [HideInInspector] public Vector2 _startPos; // 初期位置
+    [SerializeField] float _deleteTime; // 一発目の弾を消す時間
 
     void Start()
     {
         _startPos = transform.position;
+        Destroy(gameObject, _deleteTime);
     }
 
     void Update()
@@ -22,7 +24,7 @@ public class BatteryBullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // プレイヤーかステージに当たったら消す
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Stage"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Stage"))
         {
             Destroy(gameObject);
         }

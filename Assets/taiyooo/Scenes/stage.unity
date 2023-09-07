@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 16848063}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,9 +242,10 @@ GameObject:
   m_Component:
   - component: {fileID: 38437781}
   - component: {fileID: 38437782}
+  - component: {fileID: 38437783}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,6 +315,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &38437783
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38437780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &44022043
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,9 +351,10 @@ GameObject:
   m_Component:
   - component: {fileID: 44022044}
   - component: {fileID: 44022045}
+  - component: {fileID: 44022046}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,6 +424,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &44022046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44022043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &44644413
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +463,7 @@ GameObject:
   - component: {fileID: 44644415}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +572,7 @@ GameObject:
   - component: {fileID: 49080259}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -627,7 +681,7 @@ GameObject:
   - component: {fileID: 98905140}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (13)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,9 +813,10 @@ GameObject:
   m_Component:
   - component: {fileID: 115011834}
   - component: {fileID: 115011833}
+  - component: {fileID: 115011835}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,6 +886,32 @@ Transform:
   m_Father: {fileID: 115050250}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &115011835
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115011832}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &115050248
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +924,7 @@ GameObject:
   - component: {fileID: 115050249}
   m_Layer: 0
   m_Name: Square Ori
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,9 +1095,10 @@ GameObject:
   m_Component:
   - component: {fileID: 162177287}
   - component: {fileID: 162177288}
+  - component: {fileID: 162177289}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1086,6 +1168,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &162177289
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162177286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &172433458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1207,7 @@ GameObject:
   - component: {fileID: 172433463}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (10)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,7 +1342,7 @@ GameObject:
   - component: {fileID: 181177922}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1343,7 +1451,7 @@ GameObject:
   - component: {fileID: 193437596}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1452,7 +1560,7 @@ GameObject:
   - component: {fileID: 219312069}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1561,7 +1669,7 @@ GameObject:
   - component: {fileID: 237259865}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1670,7 +1778,7 @@ GameObject:
   - component: {fileID: 247422959}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1779,7 +1887,7 @@ GameObject:
   - component: {fileID: 288630577}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1888,7 +1996,7 @@ GameObject:
   - component: {fileID: 315585452}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1997,7 +2105,7 @@ GameObject:
   - component: {fileID: 338609549}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2105,7 +2213,7 @@ GameObject:
   - component: {fileID: 346066319}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top Ori
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2205,7 +2313,7 @@ GameObject:
   - component: {fileID: 369668128}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2314,7 +2422,7 @@ GameObject:
   - component: {fileID: 370752224}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2423,7 +2531,7 @@ GameObject:
   - component: {fileID: 380865619}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2529,9 +2637,10 @@ GameObject:
   m_Component:
   - component: {fileID: 385242862}
   - component: {fileID: 385242863}
+  - component: {fileID: 385242864}
   m_Layer: 0
   m_Name: Square (9)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2601,6 +2710,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &385242864
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385242861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &407130086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,7 +2749,7 @@ GameObject:
   - component: {fileID: 407130091}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (7)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2746,9 +2881,10 @@ GameObject:
   m_Component:
   - component: {fileID: 409063273}
   - component: {fileID: 409063274}
+  - component: {fileID: 409063275}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2818,6 +2954,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &409063275
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409063272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &423815949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,7 +2993,7 @@ GameObject:
   - component: {fileID: 423815951}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2940,7 +3102,7 @@ GameObject:
   - component: {fileID: 465153271}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (3)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3072,9 +3234,10 @@ GameObject:
   m_Component:
   - component: {fileID: 471221683}
   - component: {fileID: 471221684}
+  - component: {fileID: 471221685}
   m_Layer: 0
   m_Name: Square (8)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3144,6 +3307,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &471221685
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471221682}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &479055483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +3346,7 @@ GameObject:
   - component: {fileID: 479055485}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3266,7 +3455,7 @@ GameObject:
   - component: {fileID: 509343268}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3375,7 +3564,7 @@ GameObject:
   - component: {fileID: 524237445}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3484,7 +3673,7 @@ GameObject:
   - component: {fileID: 585954360}
   m_Layer: 0
   m_Name: Square (16)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3593,7 +3782,7 @@ GameObject:
   - component: {fileID: 599021997}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3702,7 +3891,7 @@ GameObject:
   - component: {fileID: 680544720}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (9)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3837,7 +4026,7 @@ GameObject:
   - component: {fileID: 703350493}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3946,7 +4135,7 @@ GameObject:
   - component: {fileID: 708384334}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4055,7 +4244,7 @@ GameObject:
   - component: {fileID: 727543239}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (5)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4190,7 +4379,7 @@ GameObject:
   - component: {fileID: 727877927}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (10)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4322,9 +4511,10 @@ GameObject:
   m_Component:
   - component: {fileID: 740730295}
   - component: {fileID: 740730296}
+  - component: {fileID: 740730297}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4394,6 +4584,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &740730297
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740730294}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &758611535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4407,7 +4623,7 @@ GameObject:
   - component: {fileID: 758611537}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4513,9 +4729,10 @@ GameObject:
   m_Component:
   - component: {fileID: 793117742}
   - component: {fileID: 793117743}
+  - component: {fileID: 793117744}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4585,6 +4802,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &793117744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793117741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &795030747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,7 +4841,7 @@ GameObject:
   - component: {fileID: 795030749}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4707,7 +4950,7 @@ GameObject:
   - component: {fileID: 818158600}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4813,9 +5056,10 @@ GameObject:
   m_Component:
   - component: {fileID: 819304014}
   - component: {fileID: 819304015}
+  - component: {fileID: 819304016}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4885,6 +5129,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &819304016
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819304013}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &821786132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,7 +5168,7 @@ GameObject:
   - component: {fileID: 821786134}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5004,9 +5274,10 @@ GameObject:
   m_Component:
   - component: {fileID: 825806225}
   - component: {fileID: 825806226}
+  - component: {fileID: 825806227}
   m_Layer: 0
   m_Name: Square (10)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5076,6 +5347,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &825806227
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825806224}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &840818494
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,7 +5386,7 @@ GameObject:
   - component: {fileID: 840818496}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5198,7 +5495,7 @@ GameObject:
   - component: {fileID: 862895344}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5307,7 +5604,7 @@ GameObject:
   - component: {fileID: 867129676}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5413,9 +5710,10 @@ GameObject:
   m_Component:
   - component: {fileID: 883474385}
   - component: {fileID: 883474386}
+  - component: {fileID: 883474387}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5485,6 +5783,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &883474387
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883474384}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &888300345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,7 +5822,7 @@ GameObject:
   - component: {fileID: 888300348}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5607,7 +5931,7 @@ GameObject:
   - component: {fileID: 889530608}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5713,9 +6037,10 @@ GameObject:
   m_Component:
   - component: {fileID: 897045566}
   - component: {fileID: 897045567}
+  - component: {fileID: 897045568}
   m_Layer: 0
   m_Name: Square (11)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5785,6 +6110,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &897045568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897045565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &898409598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,7 +6149,7 @@ GameObject:
   - component: {fileID: 898409600}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5904,9 +6255,10 @@ GameObject:
   m_Component:
   - component: {fileID: 905362357}
   - component: {fileID: 905362358}
+  - component: {fileID: 905362359}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5976,6 +6328,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &905362359
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905362356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &934683703
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,9 +6364,10 @@ GameObject:
   m_Component:
   - component: {fileID: 934683704}
   - component: {fileID: 934683705}
+  - component: {fileID: 934683706}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6058,6 +6437,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &934683706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934683703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &946770552
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,7 +6476,7 @@ GameObject:
   - component: {fileID: 946770557}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (9)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6203,9 +6608,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1007179949}
   - component: {fileID: 1007179950}
+  - component: {fileID: 1007179951}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6275,6 +6681,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1007179951
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007179948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1018878502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,7 +6720,7 @@ GameObject:
   - component: {fileID: 1018878504}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6397,7 +6829,7 @@ GameObject:
   - component: {fileID: 1024264718}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6505,7 +6937,7 @@ GameObject:
   - component: {fileID: 1027002357}
   m_Layer: 0
   m_Name: Square Fall
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6575,7 +7007,7 @@ Transform:
   - {fileID: 1288811522}
   - {fileID: 44022044}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031180614
 GameObject:
@@ -6587,9 +7019,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1031180615}
   - component: {fileID: 1031180616}
+  - component: {fileID: 1031180617}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6659,6 +7092,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1031180617
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031180614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1069247708
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,7 +7131,7 @@ GameObject:
   - component: {fileID: 1069247710}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6781,7 +7240,7 @@ GameObject:
   - component: {fileID: 1086895727}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6890,7 +7349,7 @@ GameObject:
   - component: {fileID: 1086966186}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6999,7 +7458,7 @@ GameObject:
   - component: {fileID: 1139959089}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7108,7 +7567,7 @@ GameObject:
   - component: {fileID: 1216975874}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7217,7 +7676,7 @@ GameObject:
   - component: {fileID: 1225164914}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7326,7 +7785,7 @@ GameObject:
   - component: {fileID: 1226879480}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (2)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7458,9 +7917,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1288811522}
   - component: {fileID: 1288811523}
+  - component: {fileID: 1288811524}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7530,6 +7990,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1288811524
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288811521}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1340625033
 GameObject:
   m_ObjectHideFlags: 0
@@ -7543,7 +8029,7 @@ GameObject:
   - component: {fileID: 1340625035}
   m_Layer: 0
   m_Name: Square (9)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7652,7 +8138,7 @@ GameObject:
   - component: {fileID: 1351454871}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7758,9 +8244,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1377582161}
   - component: {fileID: 1377582162}
+  - component: {fileID: 1377582163}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7830,6 +8317,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1377582163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377582160}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1408595744
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,7 +8356,7 @@ GameObject:
   - component: {fileID: 1408595749}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (8)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7975,9 +8488,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1416399967}
   - component: {fileID: 1416399968}
+  - component: {fileID: 1416399969}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8047,6 +8561,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1416399969
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416399966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1432400164
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,9 +8597,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1432400166}
   - component: {fileID: 1432400165}
+  - component: {fileID: 1432400167}
   m_Layer: 0
   m_Name: ' Square Gra'
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8129,6 +8670,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1432400167
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432400164}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1438704146
 GameObject:
   m_ObjectHideFlags: 0
@@ -8142,7 +8709,7 @@ GameObject:
   - component: {fileID: 1438704148}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8251,7 +8818,7 @@ GameObject:
   - component: {fileID: 1450441409}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8360,7 +8927,7 @@ GameObject:
   - component: {fileID: 1454116609}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (1)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8495,7 +9062,7 @@ GameObject:
   - component: {fileID: 1487592803}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (7)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8630,7 +9197,7 @@ GameObject:
   - component: {fileID: 1494682119}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8739,7 +9306,7 @@ GameObject:
   - component: {fileID: 1513356416}
   m_Layer: 0
   m_Name: Square (19)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8848,7 +9415,7 @@ GameObject:
   - component: {fileID: 1528305684}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8954,9 +9521,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1533584894}
   - component: {fileID: 1533584895}
+  - component: {fileID: 1533584896}
   m_Layer: 0
   m_Name: Square (12)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9026,6 +9594,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1533584896
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533584893}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1551497591
 GameObject:
   m_ObjectHideFlags: 0
@@ -9039,7 +9633,7 @@ GameObject:
   - component: {fileID: 1551497593}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9148,7 +9742,7 @@ GameObject:
   - component: {fileID: 1559481419}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9254,9 +9848,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1560260061}
   - component: {fileID: 1560260062}
+  - component: {fileID: 1560260063}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9326,6 +9921,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1560260063
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560260060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1585156570
 GameObject:
   m_ObjectHideFlags: 0
@@ -9339,7 +9960,7 @@ GameObject:
   - component: {fileID: 1585156573}
   m_Layer: 0
   m_Name: Isometric Diamond
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9445,7 +10066,7 @@ GameObject:
   - component: {fileID: 1594466966}
   m_Layer: 0
   m_Name: Square (15)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9554,7 +10175,7 @@ GameObject:
   - component: {fileID: 1594662025}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9663,7 +10284,7 @@ GameObject:
   - component: {fileID: 1595254568}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9772,7 +10393,7 @@ GameObject:
   - component: {fileID: 1641142370}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9881,7 +10502,7 @@ GameObject:
   - component: {fileID: 1642450713}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9990,7 +10611,7 @@ GameObject:
   - component: {fileID: 1683001835}
   m_Layer: 0
   m_Name: Square (8)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10096,9 +10717,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1705072288}
   - component: {fileID: 1705072289}
+  - component: {fileID: 1705072290}
   m_Layer: 0
   m_Name: Square
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10168,6 +10790,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1705072290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705072287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1719000500
 GameObject:
   m_ObjectHideFlags: 0
@@ -10248,7 +10896,7 @@ Transform:
   m_LocalScale: {x: 276.59662, y: 0.45931616, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1784282011
 GameObject:
@@ -10263,7 +10911,7 @@ GameObject:
   - component: {fileID: 1784282014}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10369,9 +11017,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1828308451}
   - component: {fileID: 1828308452}
+  - component: {fileID: 1828308453}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10441,6 +11090,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1828308453
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828308450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1831768344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,7 +11129,7 @@ GameObject:
   - component: {fileID: 1831768346}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10563,7 +11238,7 @@ GameObject:
   - component: {fileID: 1845908665}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (9)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10698,7 +11373,7 @@ GameObject:
   - component: {fileID: 1846065346}
   m_Layer: 0
   m_Name: Square (19)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10872,7 +11547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859955347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.24, y: 31.16, z: -20}
+  m_LocalPosition: {x: 35.4, y: 32, z: -20}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10904,7 +11579,7 @@ GameObject:
   - component: {fileID: 1865089612}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11010,9 +11685,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1870677745}
   - component: {fileID: 1870677746}
+  - component: {fileID: 1870677747}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11082,6 +11758,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1870677747
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870677744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1902992558
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,7 +11797,7 @@ GameObject:
   - component: {fileID: 1902992561}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11204,7 +11906,7 @@ GameObject:
   - component: {fileID: 1912556063}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (6)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11339,7 +12041,7 @@ GameObject:
   - component: {fileID: 1913550069}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11448,7 +12150,7 @@ GameObject:
   - component: {fileID: 1917495031}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (9)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11583,7 +12285,7 @@ GameObject:
   - component: {fileID: 1930748386}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11770,7 +12472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1945538722
 GameObject:
@@ -11785,7 +12487,7 @@ GameObject:
   - component: {fileID: 1945538725}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11894,7 +12596,7 @@ GameObject:
   - component: {fileID: 1951095439}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (12)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12029,7 +12731,7 @@ GameObject:
   - component: {fileID: 2020421486}
   m_Layer: 0
   m_Name: Square (13)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12135,9 +12837,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2060618002}
   - component: {fileID: 2060618003}
+  - component: {fileID: 2060618004}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12207,6 +12910,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2060618004
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060618001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2077294864
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,9 +12946,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2077294865}
   - component: {fileID: 2077294866}
+  - component: {fileID: 2077294867}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12289,6 +13019,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2077294867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077294864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2077648540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,9 +13055,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2077648542}
   - component: {fileID: 2077648541}
+  - component: {fileID: 2077648543}
   m_Layer: 0
   m_Name: ' Square Gra (2)'
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12371,6 +13128,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.254}
+--- !u!61 &2077648543
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077648540}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2078699848
 GameObject:
   m_ObjectHideFlags: 0
@@ -12384,7 +13167,7 @@ GameObject:
   - component: {fileID: 2078699853}
   m_Layer: 0
   m_Name: Hexagon Pointed-Top (11)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12519,7 +13302,7 @@ GameObject:
   - component: {fileID: 2090332032}
   m_Layer: 0
   m_Name: Square (14)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12628,7 +13411,7 @@ GameObject:
   - component: {fileID: 2117503590}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12737,7 +13520,7 @@ GameObject:
   - component: {fileID: 2132914477}
   m_Layer: 0
   m_Name: Square (20)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12846,7 +13629,7 @@ GameObject:
   - component: {fileID: 2138642317}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

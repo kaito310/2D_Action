@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //---弾を四方向に発射する敵のスクリプト---
+// \\・点滅処理でスプライトレンダラーがオフになり画面外判定になってしまう
 public class BulletSpawn : MonoBehaviour
 {
     [SerializeField] GameObject _bulletPrefab; // 弾プレハブ
-    SpriteRenderer _sr = null;
+    SpriteRenderer _sr = null; // スプライトレンダラー
     [SerializeField] float _spawnTime; // スポーン時間
     float _elapsedTime; // 経過時間
 

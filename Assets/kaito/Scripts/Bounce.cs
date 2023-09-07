@@ -18,5 +18,4 @@ public class Bounce : MonoBehaviour
         Vector2 velocityNext = Vector2.Reflect(_velocity, collision.contacts[0].normal);
         _velocity = velocityNext;
     }
-
 }

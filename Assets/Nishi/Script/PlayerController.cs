@@ -113,7 +113,7 @@ public class PlayerController: MonoBehaviour
         }
         if (isDead == false)
         {
-            if (HitCheck > 2)
+            if (HitCheck > 3)
             {
                 isDead = true;
             }

@@ -1,0 +1,10 @@
+diff a/Assets/Nishi/Script/PlayerController.cs b/Assets/Nishi/Script/PlayerController.cs	(rejected hunks)
+@@ -103,7 +103,7 @@
+         {
+             isjump = false;
+         }
+-        if (other.gameObject.CompareTag("Enemy"))
++        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("E_Bullet"))
+         {
+             Debug.Log("�G�ƐڐG�����I");
+             isHit = true;

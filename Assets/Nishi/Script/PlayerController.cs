@@ -103,7 +103,7 @@ public class PlayerController: MonoBehaviour
         {
             isjump = false;
         }
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("E_Bullet"))
         {
             Debug.Log("敵と接触した！");
             isHit = true;
@@ -113,7 +113,7 @@ public class PlayerController: MonoBehaviour
         }
         if (isDead == false)
         {
-            if (HitCheck > 2)
+            if (HitCheck > 3)
             {
                 isDead = true;
             }
@@ -149,6 +149,7 @@ public class PlayerController: MonoBehaviour
 
     IEnumerator _hit() //点滅させる処理
     {
+        if(isDead) yield break;
         for (int i = 0; i < loopCount; i++) //点滅ループ開始
         {
             yield return new WaitForSeconds(flashInterval); //flashInterval待ってから

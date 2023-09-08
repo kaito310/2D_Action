@@ -30,7 +30,7 @@ public class FireBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             Destroy(_EN);
         }

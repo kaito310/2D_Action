@@ -15,7 +15,6 @@ public class PlayerController: MonoBehaviour
     [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
-    [SerializeField] Image Heat;
 
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
@@ -83,7 +82,7 @@ public class PlayerController: MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.W)) //‹Ê‚ð”­ŽË‚·‚é
                 {
-                    GameObject _Bullet = Instantiate(bullet) as GameObject;
+                     GameObject _Bullet = Instantiate(bullet) as GameObject;
                     _Bullet.transform.position = this.transform.position;
                     Destroy(_Bullet, 0.8f);
                 }
@@ -113,7 +112,7 @@ public class PlayerController: MonoBehaviour
         }
         if (isDead == false)
         {
-            if (HitCheck > 3)
+            if (HitCheck > 4)
             {
                 isDead = true;
             }

@@ -23,7 +23,7 @@ public class EnemyHpController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         // 攻撃を受けているか、消滅したらこれ以降の処理を行わない
         if (_isHit || _isDead)
@@ -32,7 +32,7 @@ public class EnemyHpController : MonoBehaviour
         }
 
         // プレイヤーの弾か剣の判定に当たったら
-        if (collision.gameObject.CompareTag("Bullet") || collision.gameObject.CompareTag("Slash"))
+        if (collider.gameObject.CompareTag("Bullet") || collider.gameObject.CompareTag("Slash"))
         {
             _hp--;
             _isHit = true;
@@ -53,6 +53,7 @@ public class EnemyHpController : MonoBehaviour
     // 点滅させる処理
     IEnumerator Damage()
     {
+        Debug.Log(_isHit);
         if (_isHit) // 攻撃を受けたら
         {
             // 点滅ループ開始

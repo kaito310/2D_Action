@@ -30,6 +30,7 @@ public class MoveForward : MonoBehaviour
     }
 
     int _xVector = -1; // 移動方向変更用の変数（-1で左に移動）
+
     void Forward() // 敵の動きの関数
     {
         if (_sr.isVisible) // 画面に映っているなら

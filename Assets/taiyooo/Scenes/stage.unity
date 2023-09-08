@@ -679,8 +679,8 @@ GameObject:
   - component: {fileID: 76530153}
   - component: {fileID: 76530154}
   m_Layer: 0
-  m_Name: HitBox_Stage (7)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (7)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2586,8 +2586,8 @@ GameObject:
   - component: {fileID: 378811858}
   - component: {fileID: 378811859}
   m_Layer: 0
-  m_Name: HitBox_Stage (9)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (9)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2996,8 +2996,8 @@ GameObject:
   - component: {fileID: 408033249}
   - component: {fileID: 408033248}
   m_Layer: 0
-  m_Name: HitBox_Stage (3)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (3)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4060,8 +4060,8 @@ GameObject:
   - component: {fileID: 623216948}
   - component: {fileID: 623216949}
   m_Layer: 0
-  m_Name: HitBox_Stage (10)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (10)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4117,8 +4117,8 @@ GameObject:
   - component: {fileID: 638675287}
   - component: {fileID: 638675288}
   m_Layer: 0
-  m_Name: HitBox_Stage (8)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (8)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4174,8 +4174,8 @@ GameObject:
   - component: {fileID: 646900675}
   - component: {fileID: 646900676}
   m_Layer: 0
-  m_Name: HitBox_Stage (6)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (6)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11401,8 +11401,8 @@ GameObject:
   - component: {fileID: 1812016403}
   - component: {fileID: 1812016402}
   m_Layer: 0
-  m_Name: HitBox_Stage (4)
-  m_TagString: Stage
+  m_Name: 'HiddenHitBox (4) '
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13169,8 +13169,8 @@ GameObject:
   - component: {fileID: 1973830139}
   - component: {fileID: 1973830138}
   m_Layer: 0
-  m_Name: HitBox_Stage (2)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (2)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13335,8 +13335,8 @@ GameObject:
   - component: {fileID: 2028815280}
   - component: {fileID: 2028815279}
   m_Layer: 0
-  m_Name: HitBox_Stage
-  m_TagString: Stage
+  m_Name: HiddenHitBox
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13501,8 +13501,8 @@ GameObject:
   - component: {fileID: 2073556061}
   - component: {fileID: 2073556060}
   m_Layer: 0
-  m_Name: HitBox_Stage (1)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (1)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14020,8 +14020,8 @@ GameObject:
   - component: {fileID: 2110819212}
   - component: {fileID: 2110819213}
   m_Layer: 0
-  m_Name: HitBox_Stage (5)
-  m_TagString: Stage
+  m_Name: HiddenHitBox (5)
+  m_TagString: HiddenWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

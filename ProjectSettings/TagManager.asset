@@ -13,6 +13,7 @@ TagManager:
   - Wall
   - Slash
   - Floor
+  - HiddenWall
   layers:
   - Default
   - TransparentFX

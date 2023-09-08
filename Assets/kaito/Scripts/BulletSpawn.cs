@@ -7,6 +7,7 @@ using UnityEngine;
 public class BulletSpawn : MonoBehaviour
 {
     [SerializeField] GameObject _bulletPrefab; // 弾プレハブ
+    [SerializeField] float _bulletRotation; // 弾の回転状態
     SpriteRenderer _sr = null; // スプライトレンダラー
     [SerializeField] float _spawnTime; // スポーン時間
     float _elapsedTime; // 経過時間
@@ -41,7 +42,8 @@ public class BulletSpawn : MonoBehaviour
                 for (int i = 0; i < 4; i++) // ４回繰り返す(４つ生成)
                 {
                     // オブジェクトの位置に弾を生成(i * 90fで４方向に生成させている)
-                    Instantiate(_bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0f, 0f, i * 90f)));
+                    Instantiate(_bulletPrefab, transform.position,
+                        Quaternion.Euler(new Vector3(0f, 0f, i * 90f + _bulletRotation)));
                 }
                 _elapsedTime = 0; // 経過時間リセット
             }

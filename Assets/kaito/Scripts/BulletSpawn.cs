@@ -32,21 +32,18 @@ public class BulletSpawn : MonoBehaviour
     // bulletを生成する関数
     void Spawn()
     {
-        if (_sr.isVisible) // 画面内なら
-        {
-            _elapsedTime += Time.deltaTime;
+        _elapsedTime += Time.deltaTime;
 
-            // 経過時間がスポーン時間（秒）を越えたら
-            if (_elapsedTime > _spawnTime)
+        // 経過時間がスポーン時間（秒）を越えたら
+        if (_elapsedTime > _spawnTime)
+        {
+            for (int i = 0; i < 4; i++) // ４回繰り返す(４つ生成)
             {
-                for (int i = 0; i < 4; i++) // ４回繰り返す(４つ生成)
-                {
-                    // オブジェクトの位置に弾を生成(i * 90fで４方向に生成させている)
-                    Instantiate(_bulletPrefab, transform.position,
-                        Quaternion.Euler(new Vector3(0f, 0f, i * 90f + _bulletRotation)));
-                }
-                _elapsedTime = 0; // 経過時間リセット
+                // オブジェクトの位置に弾を生成(i * 90fで４方向に生成させている)
+                Instantiate(_bulletPrefab, transform.position,
+                    Quaternion.Euler(new Vector3(0f, 0f, i * 90f + _bulletRotation)));
             }
+            _elapsedTime = 0; // 経過時間リセット
         }
     }
 

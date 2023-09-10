@@ -46,14 +46,13 @@ public class EnemyHpController : MonoBehaviour
 
             // コルーチン開始
             StartCoroutine(Damage());
-            Debug.Log("コルーチン開始");
         }
     }
 
     // 点滅させる処理
     IEnumerator Damage()
     {
-        Debug.Log(_isHit);
+        Debug.Log("コルーチン開始");
         if (_isHit) // 攻撃を受けたら
         {
             // 点滅ループ開始

@@ -21,11 +21,11 @@ public class AnimatorController : MonoBehaviour
     {
         if (playerControllerScript.isDead == false)
         {
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 anim.SetBool("Run", true);
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 anim.SetBool("Run", true);
             }

@@ -9,7 +9,6 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] GameObject _gameClearUI;
     [SerializeField] GameObject _gameOverUI;
-    [SerializeField] Button _retryButton;
 
     bool _isGameClear = false; // ゲームクリアしてるか判別のため
     bool _isGameOver = false;
@@ -29,11 +28,11 @@ public class UIManager : MonoBehaviour
         // ゲームクリアの処理
         if (!_isGameClear)
         {
-            /*if (_playerControllerScript.isClear) // PlayerControllerにisClearを追加予定
+            if (_playerControllerScript.isClear)
             {
                 _gameClearUI.SetActive(true);
                 _isGameClear = true;
-            }*/
+            }
         }
 
         // ゲームオーバーの処理

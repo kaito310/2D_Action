@@ -33,27 +33,31 @@ public class MoveForward : MonoBehaviour
 
     void Forward() // 敵の動きの関数
     {
+        if (_checkCollision[0]._isOn || _checkCollision[1]._isOn) // 左右どちらかの接触判定がtrueになったら
+        {
+            _rightTleftF = !_rightTleftF; // 真偽を逆にする（falseならtrueに）
+        }
+
+        if (_rightTleftF) // trueなら
+        {
+            _xVector = 1; // 右に移動
+        }
+        else // falseなら
+        {
+            _xVector = -1; // 左に移動
+        }
+        _rb.velocity = new Vector2(_xVector * _speed, 0) * Time.deltaTime;
+
+        /*
         if (_sr.isVisible) // 画面に映っているなら
         {
-            if (_checkCollision[0]._isOn || _checkCollision[1]._isOn) // 左右どちらかの接触判定がtrueになったら
-            {
-                _rightTleftF = !_rightTleftF; // 真偽を逆にする（falseならtrueに）
-            }
 
-            if (_rightTleftF) // trueなら
-            {
-                _xVector = 1; // 右に移動
-            }
-            else // falseなら
-            {
-                _xVector = -1; // 左に移動
-            }
-            _rb.velocity = new Vector2(_xVector * _speed, 0) * Time.deltaTime;
         }
         else // 画面外なら
         {
             _rb.Sleep(); // 物理演算を一時的に働かせなくする
             Debug.Log("画面外");
         }
+        */
     }
 }

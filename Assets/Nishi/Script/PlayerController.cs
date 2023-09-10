@@ -18,6 +18,7 @@ public class PlayerController: MonoBehaviour
 
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
+    [HideInInspector] public bool isClear = false; // 追加部分（UIManager.csで使用）
     [HideInInspector] public bool isHit = false;
     [HideInInspector] public bool isGun = false;
     [HideInInspector] public int HitCheck;
@@ -43,7 +44,7 @@ public class PlayerController: MonoBehaviour
 
         if (isDead == false)
         {
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // 矢印キーにも対応できるように追加
             {
                 sr.flipX = true;
                 position.x -= speed * Time.deltaTime;
@@ -52,7 +53,7 @@ public class PlayerController: MonoBehaviour
                     position.x += speed * Time.deltaTime;
                 }
             }
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) // 矢印キーにも対応できるように追加
             {
                 sr.flipX = false;
                 position.x += speed * Time.deltaTime;
@@ -98,7 +99,7 @@ public class PlayerController: MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("floor"))
+        if (other.gameObject.CompareTag("Stage"))
         {
             isjump = false;
         }
@@ -126,6 +127,24 @@ public class PlayerController: MonoBehaviour
         if (isHit)
         {
             return;
+        }
+    }
+
+    // 追加部分
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // ゴールしたら
+        if (other.gameObject.CompareTag("Goal"))
+        {
+            isClear = true;
+            Destroy(gameObject);
+        }
+
+        // 落下したら
+        if (other.gameObject.CompareTag("GameOverLine"))
+        {
+            isDead = true;
+            Destroy(gameObject);
         }
     }
 

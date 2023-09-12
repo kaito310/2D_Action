@@ -15,11 +15,12 @@ public class PlayerController: MonoBehaviour
     [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
-    [SerializeField] GameObject slashCollider; // 追加部分（剣の当たり判定）
+    [SerializeField] GameObject slashCollider; // 追加部分：剣の当たり判定
+    [SerializeField] float hp; // 追加部分：hpの値より1回多く当たったら死亡判定
 
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
-    [HideInInspector] public bool isClear = false; // 追加部分（UIManager.csで使用）
+    [HideInInspector] public bool isClear = false; // 追加部分：UIManager.csで使用
     [HideInInspector] public bool isHit = false;
     [HideInInspector] public bool isGun = false;
     [HideInInspector] public int HitCheck;
@@ -128,7 +129,7 @@ public class PlayerController: MonoBehaviour
         }
         if (isDead == false)
         {
-            if (HitCheck > 4)
+            if (HitCheck > hp) // hpを変数に変更
             {
                 isDead = true;
             }

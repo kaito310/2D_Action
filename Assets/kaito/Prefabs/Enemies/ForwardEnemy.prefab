@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd38475969138446a4720f8ee777c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 3
+  _hp: 2
   _flashInterval: 0.02
   _loopCount: 20
 --- !u!1 &8943605211246712256

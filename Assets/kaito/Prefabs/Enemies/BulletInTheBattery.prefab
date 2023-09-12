@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8252154525843380861}
   - component: {fileID: 8252154525843380860}
-  - component: {fileID: 6943719471330323662}
   - component: {fileID: 5223362203320800636}
   - component: {fileID: 8592627909856112923}
+  - component: {fileID: 6943719471330323662}
   m_Layer: 0
   m_Name: BulletInTheBattery
   m_TagString: E_Bullet
@@ -85,21 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6943719471330323662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8252154525843380835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4e676553c58484e89a5c8d8a74ab1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 4
-  _startPos: {x: 0, y: 0}
-  _deleteTime: 5
 --- !u!70 &5223362203320800636
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,3 +122,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &6943719471330323662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252154525843380835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4e676553c58484e89a5c8d8a74ab1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 4
+  _startPos: {x: 0, y: 0}
+  _deleteTime: 5

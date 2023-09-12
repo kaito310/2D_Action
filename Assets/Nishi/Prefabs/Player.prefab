@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8410037727918421666}
   - component: {fileID: 8410037727918421667}
-  - component: {fileID: 8410037727918421676}
   - component: {fileID: 8410037727918421677}
   - component: {fileID: 8410037727918421678}
+  - component: {fileID: 8410037727918421676}
   - component: {fileID: 8410037727918421679}
   - component: {fileID: 8410037727918421672}
   m_Layer: 0
@@ -88,38 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8410037727918421676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8410037727918421673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf86d19482a4184eb6053c8fd58f9d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  jump: 5
-  gunTime: 5
-  heatTime: 1
-  flashInterval: 0.02
-  loopCount: 30
-  bullet: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
-  Item: {fileID: 0}
-  sr: {fileID: 8410037727918421667}
-  GUN: {fileID: 0}
-  slashCollider: {fileID: 8425055467466370271}
-  isjump: 0
-  isDead: 0
-  isClear: 0
-  isHit: 0
-  isGun: 0
-  HitCheck: 0
-  hItTime: 0
-  slash:
-  - {fileID: 8425055467466370271}
 --- !u!50 &8410037727918421677
 Rigidbody2D:
   serializedVersion: 4
@@ -167,6 +135,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.8450724}
   m_EdgeRadius: 0
+--- !u!114 &8410037727918421676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410037727918421673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf86d19482a4184eb6053c8fd58f9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  jump: 10
+  gunTime: 5
+  heatTime: 1
+  flashInterval: 0.02
+  loopCount: 30
+  bullet: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
+  Item: {fileID: 0}
+  sr: {fileID: 8410037727918421667}
+  GUN: {fileID: 0}
+  slashCollider: {fileID: 8425055467466370271}
+  hp: 3
+  isjump: 0
+  isDead: 0
+  isClear: 0
+  isHit: 0
+  isGun: 0
+  HitCheck: 0
+  hItTime: 0
 --- !u!114 &8410037727918421679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +243,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12572849, y: 0.689479}
+  m_Offset: {x: 0.12572849, y: 0.9950267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -255,7 +254,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3487952, y: 2.378958}
+  m_Size: {x: 1.3487952, y: 1.7678626}
   m_EdgeRadius: 0
 --- !u!50 &1303295292
 Rigidbody2D:
@@ -291,3 +290,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bo2d: {fileID: 6266864309054684342}
+  _player: {fileID: 8410037727918421673}

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 29285036953157998}
   - component: {fileID: 29285036953157993}
-  - component: {fileID: 29285036953157992}
-  - component: {fileID: 1931129023237106874}
   - component: {fileID: 8920275490538138945}
   - component: {fileID: 4512426294184870540}
+  - component: {fileID: 29285036953157992}
+  - component: {fileID: 1931129023237106874}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Enemy
@@ -88,37 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &29285036953157992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29285036953157995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7856b528b78cb44f878cd00cb0894ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefabs: {fileID: 8252154525843380835, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
-  _startTime: 2
-  _spawnTime: 2
-  _deleteBulletTime: 5
---- !u!114 &1931129023237106874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29285036953157995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd38475969138446a4720f8ee777c5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hp: 3
-  _flashInterval: 0.02
-  _loopCount: 20
 --- !u!61 &8920275490538138945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,6 +135,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &29285036953157992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29285036953157995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7856b528b78cb44f878cd00cb0894ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefabs: {fileID: 8252154525843380835, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
+  _startTime: 2
+  _spawnTime: 2
+  _deleteBulletTime: 5
+--- !u!114 &1931129023237106874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29285036953157995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd38475969138446a4720f8ee777c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 3
+  _flashInterval: 0.02
+  _loopCount: 20
 --- !u!1 &29285038330059596
 GameObject:
   m_ObjectHideFlags: 0

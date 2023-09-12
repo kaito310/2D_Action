@@ -6,15 +6,12 @@ using UnityEngine;
 public class PlayerSlash : MonoBehaviour
 {
     PlayerController _playerControllerScript;
-    SpriteRenderer p_Sr;
-    bool _srCheck; // プレイヤーの向き
+    [SerializeField] BoxCollider2D _bo2d; // コライダーの表示・非表示変更用
 
     void Start()
     {
         _playerControllerScript = GameObject.Find("Player").
             GetComponent<PlayerController>();
-        p_Sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
-        _srCheck = p_Sr.flipX;
     }
 
     void Update()
@@ -28,12 +25,11 @@ public class PlayerSlash : MonoBehaviour
         // 銃を取得していないかつ、Wキーを押していれば
         if (_playerControllerScript.isGun == false && Input.GetKey(KeyCode.W))
         {
-            Debug.Log("表示");
-            gameObject.SetActive(true);
+            _bo2d.enabled = true; // コライダーを取得
         }
         else
         {
-            gameObject.SetActive(false);
+            _bo2d.enabled = false;
         }
     }
 }

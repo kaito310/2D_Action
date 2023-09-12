@@ -58,6 +58,10 @@ public class AnimatorController : MonoBehaviour
                 anim.SetBool("Attack", false);
             }
         }
+        else
+        {
+            anim.SetBool("Attack", false);
+        }
         if (playerControllerScript.isjump == false)
         {
             anim.SetBool("Jump", false);

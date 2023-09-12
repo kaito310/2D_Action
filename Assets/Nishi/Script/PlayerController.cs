@@ -15,6 +15,7 @@ public class PlayerController: MonoBehaviour
     [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
+    [SerializeField] GameObject slashCollider; // 追加部分（剣の当たり判定）
 
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
@@ -28,8 +29,6 @@ public class PlayerController: MonoBehaviour
     private BoxCollider2D _bo2D;
     private float currentGunTime = 0f;
     private STATE state;
-
-    [SerializeField] GameObject[] slash; // 追加部分（剣攻撃の当たり判定）
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +49,13 @@ public class PlayerController: MonoBehaviour
             {
                 sr.flipX = true;
                 position.x -= speed * Time.deltaTime;
+
+                //---追加部分---
+                Vector3 pos = slashCollider.transform.localPosition;
+                pos.x = -0.5f; // プレイヤーの向きに合わせて剣のコライダー位置変更
+                slashCollider.transform.localPosition = pos; // 剣のコライダー位置取得
+                //---追加部分---
+
                 if (Input.GetKey(KeyCode.D))
                 {
                     position.x += speed * Time.deltaTime;
@@ -59,6 +65,13 @@ public class PlayerController: MonoBehaviour
             {
                 sr.flipX = false;
                 position.x += speed * Time.deltaTime;
+
+                //---追加部分---
+                Vector3 pos = slashCollider.transform.localPosition;
+                pos.x = 0.5f;
+                slashCollider.transform.localPosition = pos;
+                //---追加部分---
+
                 if (Input.GetKey(KeyCode.A))
                 {
                     position.x -= speed * Time.deltaTime;

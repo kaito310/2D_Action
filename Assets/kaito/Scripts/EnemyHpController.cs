@@ -23,7 +23,7 @@ public class EnemyHpController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerStay2D(Collider2D collider)
     {
         // UŒ‚‚ğó‚¯‚Ä‚¢‚é‚©AÁ–Å‚µ‚½‚ç‚±‚êˆÈ~‚Ìˆ—‚ğs‚í‚È‚¢
         if (_isHit || _isDead)

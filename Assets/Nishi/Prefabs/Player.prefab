@@ -107,9 +107,10 @@ MonoBehaviour:
   flashInterval: 0.02
   loopCount: 30
   bullet: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
-  Item: {fileID: 8171824658849886129, guid: 6317a828d88274049a5a070ae8c065a3, type: 3}
+  Item: {fileID: 0}
   sr: {fileID: 8410037727918421667}
   GUN: {fileID: 0}
+  slashCollider: {fileID: 8425055467466370271}
   isjump: 0
   isDead: 0
   isClear: 0
@@ -117,6 +118,8 @@ MonoBehaviour:
   isGun: 0
   HitCheck: 0
   hItTime: 0
+  slash:
+  - {fileID: 8425055467466370271}
 --- !u!50 &8410037727918421677
 Rigidbody2D:
   serializedVersion: 4
@@ -205,6 +208,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8583415782925629058}
   - component: {fileID: 6266864309054684342}
+  - component: {fileID: 1303295292}
+  - component: {fileID: 1303295291}
   m_Layer: 0
   m_Name: SlashHitBox
   m_TagString: Slash
@@ -252,3 +257,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3487952, y: 2.378958}
   m_EdgeRadius: 0
+--- !u!50 &1303295292
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425055467466370271}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 3
+--- !u!114 &1303295291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425055467466370271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e418bbcb50390499c1e431962d46d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bo2d: {fileID: 6266864309054684342}

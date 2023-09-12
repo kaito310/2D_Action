@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7679293880228662013, guid: ea7d9caf252e11246bb9f9d6a1def527, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3377393512342484466, guid: ea7d9caf252e11246bb9f9d6a1def527, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -277,7 +281,7 @@ GameObject:
   - component: {fileID: 195031912}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,7 +535,7 @@ GameObject:
   - component: {fileID: 548211821}
   m_Layer: 0
   m_Name: Ground (2)
-  m_TagString: floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -680,6 +684,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1303295288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8425055467466370271, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+  m_PrefabInstance: {fileID: 8410037728030176779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1303295291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303295288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e418bbcb50390499c1e431962d46d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1758572338 stripped
@@ -870,6 +891,18 @@ PrefabInstance:
     - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
       propertyPath: flashInterval
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+      propertyPath: slash.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+      propertyPath: slash.Array.data[0]
+      value: 
+      objectReference: {fileID: 1303295288}
+    - target: {fileID: 8425055467466370271, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}

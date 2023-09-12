@@ -29,6 +29,8 @@ public class PlayerController: MonoBehaviour
     private float currentGunTime = 0f;
     private STATE state;
 
+    [SerializeField] GameObject[] slash; // ’Ç‰Á•”•ªiŒ•UŒ‚‚Ì“–‚½‚è”»’èj
+
     // Start is called before the first frame update
     void Start()
     {

@@ -154,11 +154,10 @@ MonoBehaviour:
   flashInterval: 0.02
   loopCount: 30
   bullet: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
-  Item: {fileID: 0}
+  Item: {fileID: 8171824658849886129, guid: 6317a828d88274049a5a070ae8c065a3, type: 3}
   sr: {fileID: 8410037727918421667}
   GUN: {fileID: 0}
   slashCollider: {fileID: 8425055467466370271}
-  hp: 4
   isjump: 0
   isDead: 0
   isClear: 0
@@ -166,6 +165,7 @@ MonoBehaviour:
   isGun: 0
   HitCheck: 0
   hItTime: 0
+  hp: 4
 --- !u!114 &8410037727918421679
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,6 @@ public class PlayerController: MonoBehaviour
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
     [SerializeField] GameObject slashCollider; // 追加部分：剣の当たり判定
-    [SerializeField] float hp; // 追加部分：hpの値より1回多く当たったら死亡判定
 
     [HideInInspector] public bool isjump = false;
     [HideInInspector] public bool isDead = false;
@@ -30,6 +29,7 @@ public class PlayerController: MonoBehaviour
     private BoxCollider2D _bo2D;
     private float currentGunTime = 0f;
     private STATE state;
+    public int hp; // 追加部分：hpの値より1回多く当たったら死亡判定
 
     // Start is called before the first frame update
     void Start()
@@ -198,5 +198,10 @@ public class PlayerController: MonoBehaviour
         }
         state = STATE.NOMAL;
         isHit = false;
+    }
+
+    public int GetHP()
+    {
+        return hp;
     }
 }

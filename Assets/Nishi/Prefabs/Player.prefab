@@ -133,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.8450724}
+  m_Size: {x: 0.341054, y: 0.7346928}
   m_EdgeRadius: 0
 --- !u!114 &8410037727918421676
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf86d19482a4184eb6053c8fd58f9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 10
   jump: 10
   gunTime: 5
   heatTime: 1
@@ -158,7 +158,7 @@ MonoBehaviour:
   sr: {fileID: 8410037727918421667}
   GUN: {fileID: 0}
   slashCollider: {fileID: 8425055467466370271}
-  hp: 3
+  hp: 4
   isjump: 0
   isDead: 0
   isClear: 0

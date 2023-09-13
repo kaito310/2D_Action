@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &44411920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3618320013300316246, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
+  m_PrefabInstance: {fileID: 582246411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &49586917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -652,56 +663,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &680443249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3618320013957697562, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
-  m_PrefabInstance: {fileID: 3618320014352592235}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &680443254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680443249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab538d51639544c4c9fecc63070bab72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeObj: {fileID: 680443249}
---- !u!1 &1044847263 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
-  m_PrefabInstance: {fileID: 8777266338957819258}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1197446461 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3618320013300316246, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
-  m_PrefabInstance: {fileID: 3618320014352592235}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1758572338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171824658849886129, guid: 6317a828d88274049a5a070ae8c065a3, type: 3}
-  m_PrefabInstance: {fileID: 368801393}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3618320014352592235
+--- !u!1001 &582246411
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3618320013915256222, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3618320013957697562, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -790,16 +758,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3618320014270188009, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3618320014556172493, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
-      propertyPath: m_FillAmount
-      value: 1
+    - target: {fileID: 3618320014177873468, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d94faf82b99c24c4ba199b081a51942b, type: 3}
+--- !u!1 &1044847263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8777266338902741285, guid: 77c6ac0e0c95c9349beba2a706546bb9, type: 3}
+  m_PrefabInstance: {fileID: 8777266338957819258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1758572338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171824658849886129, guid: 6317a828d88274049a5a070ae8c065a3, type: 3}
+  m_PrefabInstance: {fileID: 368801393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8410037728030176779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -858,7 +832,7 @@ PrefabInstance:
     - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
       propertyPath: GUN
       value: 
-      objectReference: {fileID: 1197446461}
+      objectReference: {fileID: 44411920}
     - target: {fileID: 8410037727918421676, guid: b2a5c3a91b1beb8458dcc26d5b3bd650, type: 3}
       propertyPath: Item
       value: 

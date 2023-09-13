@@ -46,5 +46,4 @@ public class BulletSpawn : MonoBehaviour
             _elapsedTime = 0; // 経過時間リセット
         }
     }
-
 }

@@ -6,12 +6,12 @@ using UnityEngine;
 public class BatteryBullet : MonoBehaviour
 {
     [SerializeField] float _speed; // ‘¬‚³
-    [HideInInspector] public Vector2 _startPos; // ‰ŠúˆÊ’u
+    //[HideInInspector] public Vector2 _startPos; // ‰ŠúˆÊ’u
     [SerializeField] float _deleteTime; // ˆê”­–Ú‚Ì’e‚ğÁ‚·ŠÔ
 
     void Start()
     {
-        _startPos = transform.position;
+        //_startPos = transform.position;
         Destroy(gameObject, _deleteTime);
     }
 

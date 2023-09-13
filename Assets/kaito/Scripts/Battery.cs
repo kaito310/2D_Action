@@ -5,29 +5,40 @@ using UnityEngine;
 //---弾を発射する砲台のスクリプト---
 public class Battery : MonoBehaviour
 {
-    [SerializeField] GameObject _bulletPrefabs;
-    BatteryBullet _bulletControllerScript; // 弾のスクリプト
-
-    [SerializeField] float _startTime; // 生成開始時間
+    [SerializeField] GameObject _bulletPrefab; // 弾プレハブ
+    SpriteRenderer _sr = null; // スプライトレンダラー
     [SerializeField] float _spawnTime; // スポーン時間
-    [SerializeField] float _deleteBulletTime; // 弾の削除時間
+    float _elapsedTime; // 経過時間
+
+    bool _isDead = false; // 死亡判定
 
     void Start()
     {
-        _bulletControllerScript = GameObject.Find("BulletInTheBattery")
-            .GetComponent<BatteryBullet>(); // スクリプト取得
-
-        // ""メソッドを(_startTime)秒後に実行後、(_spawnTime)秒間隔で実行
-        InvokeRepeating("InstantiateGameObject", _startTime, _spawnTime);
+        _sr = GetComponent<SpriteRenderer>();
     }
 
-    // ゲームオブジェクトをインスタンス化するメソッド
-    public void InstantiateGameObject()
+    void Update()
     {
-        var instance = Instantiate<GameObject>(_bulletPrefabs, _bulletControllerScript._startPos,
-            _bulletPrefabs.transform.rotation);
+        if (_isDead) // trueになったら
+        {
+            return; // これ以降は呼ばれない
+        }
 
-        // インスタンスしたオブジェクトを(_deleteBulletTime)秒後に消す
-        Destroy(instance, _deleteBulletTime);
+        Spawn();
+    }
+
+    // bulletを生成する関数
+    void Spawn()
+    {
+        _elapsedTime += Time.deltaTime;
+
+        // 経過時間がスポーン時間（秒）を越えたら
+        if (_elapsedTime > _spawnTime)
+        {
+            // オブジェクトの位置に弾を生成
+            Instantiate(_bulletPrefab, transform.position, _bulletPrefab.transform.rotation);
+
+            _elapsedTime = 0; // 経過時間リセット
+        }
     }
 }

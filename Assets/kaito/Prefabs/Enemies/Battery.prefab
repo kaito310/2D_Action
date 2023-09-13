@@ -147,10 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7856b528b78cb44f878cd00cb0894ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletPrefabs: {fileID: 8252154525843380835, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
-  _startTime: 2
-  _spawnTime: 2
-  _deleteBulletTime: 5
+  _bulletPrefab: {fileID: 8252154525843380835, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
+  _spawnTime: 3
 --- !u!114 &1931129023237106874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +253,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 29285036953157998}
     m_Modifications:
+    - target: {fileID: 6943719471330323662, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
+      propertyPath: _deleteTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8252154525843380835, guid: c7edf9e6a5da6f040aaa64e386cfae6e, type: 3}
       propertyPath: m_Name
       value: BulletInTheBattery

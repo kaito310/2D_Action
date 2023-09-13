@@ -10,11 +10,12 @@ public class EnemyCollisionCheck : MonoBehaviour
     string _stageTag = "Stage";
     string _enemyTag = "Enemy";
     string _wallTag = "HiddenWall";
+    string _playerTag = "Player";
 
     private void OnTriggerEnter2D(Collider2D collision) // 接触したとき
     {
-        // StageタグかEnemyタグかHiddenWallタグを持つオブジェクトなら
-        if (collision.tag == _stageTag || collision.tag == _enemyTag || collision.tag == _wallTag)
+        // StageタグかEnemyタグかHiddenWallタグかPlayerタグを持つオブジェクトなら
+        if (collision.tag == _stageTag || collision.tag == _enemyTag || collision.tag == _wallTag || collision.tag == _playerTag)
         {
             _isOn = true;
         }

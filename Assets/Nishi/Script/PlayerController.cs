@@ -8,13 +8,18 @@ public class PlayerController: MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float jump = 1;
     [SerializeField] float gunTime = 1.0f;
-    [SerializeField] float heatTime = 1.0f;
+    [SerializeField] float heartTime = 1.0f;
     [SerializeField] float flashInterval;
     [SerializeField] int loopCount;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject Item;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] Image GUN;
+    [SerializeField] Image HEART;
+    [SerializeField] Image HEART2;
+    [SerializeField] Image HEART3;
+    [SerializeField] Image HEART4;
+    [SerializeField] Image HEART5;
     [SerializeField] GameObject slashCollider; // 追加部分：剣の当たり判定
 
     [HideInInspector] public bool isjump = false;
@@ -28,6 +33,7 @@ public class PlayerController: MonoBehaviour
     private Rigidbody2D _rd2D;
     private BoxCollider2D _bo2D;
     private float currentGunTime = 0f;
+    private float currenHeartTime = 0f;
     private STATE state;
     public int hp; // 追加部分：hpの値より1回多く当たったら死亡判定
 
@@ -97,7 +103,7 @@ public class PlayerController: MonoBehaviour
             }
             if (isGun)
             {
-                if (Input.GetKeyDown(KeyCode.W)) //玉を発射する
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //玉を発射する
                 {
                      GameObject _Bullet = Instantiate(bullet) as GameObject;
                     _Bullet.transform.position = this.transform.position;
@@ -108,9 +114,8 @@ public class PlayerController: MonoBehaviour
             {
                 return;
             }
-
-            Fill();
         }
+        Fill();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -138,7 +143,6 @@ public class PlayerController: MonoBehaviour
         {
             currentGunTime = gunTime;
             isGun = true;
-            Destroy(Item);
         }
         if (isHit)
         {
@@ -160,15 +164,13 @@ public class PlayerController: MonoBehaviour
         if (other.gameObject.CompareTag("GameOverLine"))
         {
             isDead = true;
+            HEART.fillAmount = currentGunTime / heartTime;
+            HEART2.fillAmount = currentGunTime / heartTime;
+            HEART3.fillAmount = currentGunTime / heartTime;
+            HEART4.fillAmount = currentGunTime / heartTime;
+            HEART5.fillAmount = currentGunTime / heartTime;
             Destroy(gameObject);
         }
-    }
-
-    enum STATE
-    {
-        NOMAL,
-        DAMAGED,
-        MUTEKI
     }
 
     private void Fill()
@@ -179,6 +181,44 @@ public class PlayerController: MonoBehaviour
             isGun = false;
         }
         GUN.fillAmount = currentGunTime / gunTime;
+ 
+        if (HitCheck == 1)
+        {
+            currenHeartTime -= Time.deltaTime;
+            HEART.fillAmount = currentGunTime / heartTime;
+        }
+        currenHeartTime = heartTime;
+        if (HitCheck == 2)
+        {
+            currenHeartTime -= Time.deltaTime;
+            HEART2.fillAmount = currentGunTime / heartTime;
+        }
+        currenHeartTime = heartTime;
+        if (HitCheck == 3)
+        {
+            currenHeartTime -= Time.deltaTime;
+            HEART3.fillAmount = currentGunTime / heartTime;
+        }
+        currenHeartTime = heartTime;
+        if (HitCheck == 4)
+        {
+            currenHeartTime -= Time.deltaTime;
+            HEART4.fillAmount = currentGunTime / heartTime;
+        }
+        currenHeartTime = heartTime;
+        if (HitCheck == 5)
+        {
+            currenHeartTime -= Time.deltaTime;
+            HEART5.fillAmount = currentGunTime / heartTime;
+        }
+        currenHeartTime = heartTime;
+    }
+
+    enum STATE
+    {
+        NOMAL,
+        DAMAGED,
+        MUTEKI
     }
 
     IEnumerator _hit() //点滅させる処理

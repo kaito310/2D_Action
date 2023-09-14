@@ -49,7 +49,7 @@ public class AnimatorController : MonoBehaviour
         }
         if (playerControllerScript.isGun == false)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 anim.SetBool("Attack", true);
             }
